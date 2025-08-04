@@ -14,7 +14,7 @@ left, right = st.columns([0.65,0.35])
 
 with right:
     control_options = ['English 🇬🇧', 'Cymraeg 🏴󠁧󠁢󠁷󠁬󠁳󠁿']
-    mode = st.segmented_control(label='',options=control_options,default=control_options[0])
+    mode = st.segmented_control(label='Language',options=control_options,default=control_options[0])
 
 with open('website/data/about_page_text.json') as file:
     page_text = json.load(file)
