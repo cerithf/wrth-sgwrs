@@ -26,12 +26,14 @@ else:
 
 st.markdown(page_text['body'])
 
-if not logged_in:
-    st.subheader(page_text['login_subheader'])
-    l,r = st.columns(2)
-    with l:
-        with st.container(border=True): google_login_button(page_text['login_button'])
-    with r:
-        guest_login_form()
+# if not logged_in:
+#     st.subheader(page_text['login_subheader'])
+#     l,r = st.columns(2)
+#     with l:
+#         with st.container(border=True): google_login_button(page_text['login_button'])
+#     with r:
+#         guest_login_form()
+
+guest_login_form()
 
         
