@@ -357,6 +357,12 @@ def guest_login_button(label, filepath='website/data/user_learnt_topics.csv'):
     if st.button(label):
         guest_login(filepath)
 
+def check_user_attribute():
+    if 'is_logged_in' in st.user:
+        return st.user.is_logged_in
+    else:
+        return None
+
 # SAVING & LOADING USER TOPICS
 
 def save_user_topics(topics, filepath):
