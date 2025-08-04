@@ -1,8 +1,0 @@
-[theme]
-base = "light"
-primaryColor = "#dc3a3a"
-backgroundColor = "#e8fbe3"
-secondaryBackgroundColor = "#f5fff5"
-
-[global]
-disableWidgetStateDuplicationWarning = true
