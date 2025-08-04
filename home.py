@@ -19,8 +19,7 @@ pages = {
     'Grammar': [st.Page('website/pages/grammar.py', title='Grammar')],
     'Conversations': [st.Page('website/pages/chatbot.py', title='Conversations')],
     'Test Yourself': [st.Page('website/pages/test_yourself.py', title='Test Yourself!')],
-    'Test': [st.Page('website/pages/test.py', title='Test')]
-
+    'Test': [st.Page('website/pages/test.py', title='Test')] # Used to test code, doesn't appear to user
 }
 
 st.navigation(pages, position='hidden').run()
@@ -46,5 +45,4 @@ if logged_in:
         st.page_link(pages['Conversations'][0], icon="🗣️")
         st.page_link(pages['Test Yourself'][0], icon="🧪")
         st.divider()
-        st.page_link(pages['Test'][0], icon="🚧")
         logout_button('Log out')
