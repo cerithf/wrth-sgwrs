@@ -27,12 +27,10 @@ st.navigation(pages, position='hidden').run()
 path = 'website/assets/'
 st.logo(path+"Wordmark.png", icon_image=path+"Icon.png")
 
-if 'is_logged_in' in st.user:
-    user_logged_in = st.user.is_logged_in
-else:
-    user_logged_in = False
+if 'is_logged_in' not in st.user:
+    st.user.is_logged_in = None
 
-logged_in = user_logged_in or (cookie_controller.get('guest_is_logged_in'))
+logged_in = st.user.is_logged_in or cookie_controller.get('guest_is_logged_in')
 
 if logged_in:
     with st.sidebar:
