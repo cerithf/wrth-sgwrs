@@ -4,3 +4,4 @@ deep_translator
 pandas
 streamlit_cookies_controller 
 datetime
+Authlib
