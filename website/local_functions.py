@@ -315,7 +315,7 @@ def logout_button(label):
             st.switch_page('website/pages/about.py')
             st.sidebar('Close')
             st.rerun()
-        elif st.user.is_logged_in:
+        elif check_user_attribute():
             st.logout()
 
 def guest_login_form(filepath='website/data/user_learnt_topics.csv'):
@@ -350,7 +350,7 @@ def guest_login(guest_id):
 
 def check_access():
     '''Fixes issue where guest is viewing page other than 'about' and sidebar disappears.'''
-    if (not st.user.is_logged_in) and (not cookie_controller.get('guest_is_logged_in')):
+    if (not check_user_attribute()) and (not cookie_controller.get('guest_is_logged_in')):
         st.switch_page('website/pages/about.py')
 
 def guest_login_button(label, filepath='website/data/user_learnt_topics.csv'):
@@ -367,7 +367,7 @@ def check_user_attribute():
 
 def save_user_topics(topics, filepath):
     topics = ';'.join([str(num) for num in sorted(topics)])
-    user_id = [st.user.sub if st.user.is_logged_in else cookie_controller.get('sub')][0]
+    user_id = [st.user.sub if check_user_attribute() else cookie_controller.get('sub')][0]
     now = dt.datetime.now()
     data = [{'user_id': user_id, 'topics': topics, 'last_updated': now}]
 
@@ -382,7 +382,7 @@ def save_user_topics(topics, filepath):
     df.to_csv(filepath)
 
 def load_user_topics(filepath):
-    user_id = [st.user.sub if st.user.is_logged_in else cookie_controller.get('sub')][0]
+    user_id = [st.user.sub if check_user_attribute() else cookie_controller.get('sub')][0]
     df = pd.read_csv(filepath, index_col=0)
 
     if user_id in df['user_id'].to_list():
