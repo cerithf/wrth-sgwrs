@@ -306,7 +306,6 @@ def generate_cookie(x):
 def google_login_button(label):
     if st.button(label, icon="🔑", use_container_width=True):
         st.login("google")
-        st.user.is_logged_in = True
 
 def logout_button(label):
     if st.button(label, icon="🔒"):
