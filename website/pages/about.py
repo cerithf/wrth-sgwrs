@@ -7,7 +7,12 @@ deinitialize_profile_page()
 ss = st.session_state
 if 'chosen_topic' not in ss: ss.chosen_topic = None
 
-logged_in = (st.user.is_logged_in) or (cookie_controller.get('guest_is_logged_in'))
+if 'is_logged_in' in st.user:
+    user_logged_in = st.user.is_logged_in
+else:
+    user_logged_in = False
+
+logged_in = user_logged_in or (cookie_controller.get('guest_is_logged_in'))
 left, right = st.columns([0.65,0.35])
 
 with right:
