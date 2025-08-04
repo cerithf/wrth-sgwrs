@@ -326,17 +326,16 @@ def guest_login_form(filepath='website/data/user_learnt_topics.csv'):
         with r: log_in = st.form_submit_button(label="Log in", use_container_width=True)
     if register or log_in:
         guest_id = 'guest_'+guest_username
-        guest_users = list(pd.read_csv(filepath)['user_id'])
-        guest_users = [id for id in guest_users if 'guest' in id]
+        users = list(pd.read_csv(filepath)['user_id'])
         if register:
-            if guest_id in guest_users:
+            if guest_id in users:
                 st.error("Username already taken, please use another one!", icon="⚠️")
             else:
                 st.info(f"Username set. Welcome, {guest_username}!")
                 guest_login(guest_id)
                 save_user_topics([],'website/data/user_learnt_topics.csv')
         elif log_in:
-            if guest_id in guest_users:
+            if guest_id in users:
                 st.info(f'User found. Welcome back, {guest_username}!')
                 guest_login(guest_id)
             else:
