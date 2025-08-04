@@ -1,0 +1,129 @@
+,topic,cy,en
+0,Clothes,Beth dych chi'n wisgo heddiw?,What are you wearing today?
+1,Clothes,Pa ddillad dych chi'n wisgo yn y gaeaf?,What clothes do you wear in winter?
+2,Clothes,Ydych chi'n hoffi dillad syml neu fwy lliwgar neu gymhleth?,Do you like simple clothes or ones that are more colourful or complex?
+3,Clothes,Beth yw eich barn chi am esgidiau â sodlau uchel?,What is your opinion on high-heeled shoes?
+4,Clothes,Pa fath o esgidiau wyt ti’n hoffi?,What kind of shoes do you like?
+5,Clothes,Wyt ti'n hoffi siopa am ddillad?,Do you like shopping for clothes?
+6,Clothes,Ydych chi'n gwisgo unrhywbeth arbennig heddiw?,Are you wearing anything special today?
+7,Clothes,Beth dych chi'n wisgo i'r gwaith?,What do you wear to work?
+8,Clothes,Oes well gyda chi dillad ffurfiol neu anffurfiol?,Do you prefer formal or informal clothes?
+9,Clothes,Oes hoff ddarn o ddillad gennych chi?,Do you have a favourite item of clothing?
+10,Clothes,Ydych chi'n siopa am ddillad ar-lein o gwbl?,Do you ever shop for clothes online?
+11,Clothes,Beth yw eich barn chi am fenig?,What's your opinion on gloves?
+12,Clothes,Beth yw eich barn chi am brynu dillad ail-law?,What's your opinion on buying second-hand clothes?
+13,Colours,Ydych chi’n gwisgo dillad lliwgar?,Do you wear colourful clothes?
+14,Colours,Pa liw yw eich hoff liw?,What colour is your favourite colour?
+15,Colours,Oes well gyda chi lliwiau llachar neu dywyll?,Do you prefer bright or dark colours?
+16,Colours,Pa liw yw eich llygaid?,What colour are your eyes?
+17,Colours,Oes yna liw nad ydych chi'n ei hoffi?,Is there a colour you don't like?
+18,Colours,Pa liw yw'r awyr heddiw?,What colour is the sky today?
+19,Colours,Beth oedd lliw eich ystafell gwely pan oeddech chi'n ifanc?,What colour was your bedroom when you were younger?
+20,Colours,Pa liw yw eich gwallt?,What colour is your hair?
+21,Colours,Pa liw dillad dych chi'n gwisgo heddiw?,What colour clothes are you wearing today?
+22,Colours,Oes well gyda chi ystafelloedd lliwgar neu syml?,Do you prefer colourful or simple rooms/interiors?
+23,Colours,Pa liw yw eich tŷ?,What colour is your house?
+24,Colours,Pa liw blodau dych chi'n hoffi?,What colour flowers do you like?
+25,Colours,Ydych chi'n meddwl bod lliwiau'n bwysig?,Do you think colours are important?
+26,Countries & Travel,Pa wlad wyt ti eisiau ymweld â hi?,Which country do you want to visit?
+27,Countries & Travel,Pa wlad ydych chi wedi ymweld â hi y mwyaf?,Which country have you visited the most?
+28,Countries & Travel,Beth yw'r pellaf dych chi wedi teithio?,What's the furthest you have travelled?
+29,Countries & Travel,Beth yw eich hoff beth am deithio i wlad dramor?,What's your favourite thing about travelling to a foreign country?
+30,Countries & Travel,Dych chi'n hoffi teithio ar eich pen eich hun?,Do you like travelling alone?
+31,Countries & Travel,Dych chi wedi bod i Ffrainc?,Have you been to France?
+32,Countries & Travel,O ba wlad dych chi'n dod?,What country do you come from?
+33,Countries & Travel,Dych chi wedi byw mewn gwlad arall?,Have you lived in another country?
+34,Countries & Travel,Pa wlad yw eich ffefryn?,What country is your favourite?
+35,Countries & Travel,Ble aethoch chi ar eich gwyliau diwethaf?,Where did you go on your last holiday?
+36,Countries & Travel,Dych chi'n siarad ieithoedd eraill?,Do you speak other languages?
+37,Countries & Travel,Beth yw'r anfanteision o deithio yn eich barn chi?,"What are the disadvantages of travelling, in your opinion?"
+38,Countries & Travel,Sut dych chi'n hoffi teithio?,How do you like to travel?
+39,Daily Routine,Dych chi'n cymryd cawod yn y bore neu'r nos?,Do you take a shower in the morning or evening?
+40,Daily Routine,Pryd dych chi'n mynd i'r gwely?,When do you go to bed?
+41,Daily Routine,Dych chi'n gwylio'r newyddion bob dydd?,Do you watch the news every day?
+42,Daily Routine,Beth yw'r peth cyntaf dych chi'n wneud yn y bore?,What's the first thing you do in the morning?
+43,Daily Routine,Beth dych chi'n wneud ar ôl yr ysgol/gwaith?,What do you do after school/work?
+44,Daily Routine,Dych chi'n gwneud ymarfer corff yn rheolaidd?,Do you exercise regularly?
+45,Daily Routine,Pryd dych chi'n codi yn y bore?,When do you get up in the morning?
+46,Daily Routine,Beth dych chi'n fwyta i frecwast?,What do you eat for breakfast?
+47,Daily Routine,Ydych chi fel arfer yn prynu cinio neu'n dod â chinio o adref?,Do you usually buy lunch or bring it from home?
+48,Daily Routine,Sut ydych chi'n teithio i'r ysgol/gwaith?,How do you travel to school/work?
+49,Daily Routine,Oes yna rywbeth arbennig dych chi'n ceisio gwneud o leiaf unwaith bob dydd?,Is there something special you try to do at least once a day?
+50,Daily Routine,"Beth yw eich hoff ran o'r diwrnod, a pham?","What is your favourite part of the day, and why?"
+51,Daily Routine,Oes well gyda chi cael strwythyr pendant yn y dydd neu'r rhyddid i wneud pethau gwahanol?,Do you prefer having a specific structure to your day or the freedom to do different things?
+52,Family,Sawl person sydd yn eich teulu chi?,How many people are in your family?
+53,Family,Oes gyda chi brodyr neu chwiorydd?,Do you have any brothers or sisters?
+54,Family,Oes anifeiliaid anwes gyda chi?,Do you have pets?
+55,Family,Dych chi'n byw yn agos at eich teulu?,Do you live close by to your family?
+56,Family,Oes nain a thaid gyda chi?,Do you have grandparents?
+57,Family,Pa fath o swydd sydd gyda'ch rhieni?,What kinds of jobs do your parents have?
+58,Food and Drink,Pa lysiau dych chi'n hoffi?,What vegetables do you like?
+59,Food and Drink,Dych chi'n mynd mas i fwyta yn aml?,Do you go out to eat often?
+60,Food and Drink,Ydy bwyta brecwast yn bwysig i chi?,Is eating breakfast important to you?
+61,Food and Drink,Dych chi'n bwyta cig?,Do you eat meat?
+62,Food and Drink,Dych chi'n hoffi siocled?,Do you like chocolate?
+63,Food and Drink,Ydych chi'n yfed coffi? Beth yw eich barn chi amdano?,Do you drink coffee? What's your opninion on it?
+64,Food and Drink,Dych chi'n gallu coginio?,Can you cook?
+65,Food and Drink,Beth dych chi'n yfed gyda'ch bwyd?,What do you drink with your food?
+66,Food and Drink,Beth yw eich hoff fwyd?,What is your favourite food?
+67,Food and Drink,Dych chi'n hoffi bwyd â sbeis?,Do you like spicy food?
+68,Food and Drink,Beth wyt ydych chi'n cael i frecwast fel arfer?,What do you usually have for breakfast?
+69,Food and Drink,"Oes well gyda chi coffi, te, neu siocled poeth?","Do you prefer coffee, tea or hot chocolate?"
+70,Food and Drink,Pa fath o fwyd ydych chi _ddim_ yn hoffi?,What kind of food do you dislike?
+71,Hobbies & Free Time,Ydych chi'n darllen yn eich amser sbâr?,Do you read in your spare time?
+72,Hobbies & Free Time,Wyt ti'n chwarae unrhyw chwaraeon?,Do you play any sports?
+73,Hobbies & Free Time,Beth wyt ti'n hoffi gwneud yn dy amser hamdden?,What do you like to do in your free time?
+74,Hobbies & Free Time,Dych chi'n hoffi garddio?,Do you like gardening?
+75,Hobbies & Free Time,Beth dych chi'n gwneud ar y penwythnos?,What do you do at the weekend?
+76,Hobbies & Free Time,Pa fath o gerddoriaeth dych chi'n hoffi gwrando arno?,What kind of music do you like?
+77,Hobbies & Free Time,Oes yna hobi hoffech chi ddechrau?,Is there a hobby you would like to start?
+78,Hobbies & Free Time,Oes hobi arbennig gyda chi?,Do you have a special hobby?
+79,Hobbies & Free Time,Dych chi'n hoffi coginio?,Do you like cooking?
+80,Hobbies & Free Time,Pa raglenni teledu dych chi'n hoffi?,What TV programmes do you like?
+81,Hobbies & Free Time,Dych chi'n mynd i'r sinema'n aml?,Do you go to the cinema often?
+82,Hobbies & Free Time,Dych chi'n hoffi chwaraeon?,Do you like sports?
+83,Hobbies & Free Time,"Ydych chi'n chwarae offeryn? Os na, oes offeryn hoffech chi allu chwarae?","Do you play an instrument? If not, is there an instrument you'd like to be able to play?"
+84,Introducing Yourself,Beth yw eich enw chi?,What’s your name?
+85,Introducing Yourself,O ble dych chi'n dod?,Where do you come from?
+86,Introducing Yourself,Sut byddech chi'n disgrifio'ch hun mewn 3 gair?,How would you describe yourself in 3 words?
+87,Introducing Yourself,Faint yw eich oed chi?,How old are you?
+88,Introducing Yourself,Ble dych chi'n byw?,Where do you live?
+89,Introducing Yourself,Beth yw eich gwaith chi?,What is your job?
+90,Introducing Yourself,Pam ydych chi'n dysgu Cymraeg?,Why are you learning Welsh?
+91,Introducing Yourself,Oes unrhyw sgiliau arbennig gyda chi?,Do you have any special skills?
+92,Introducing Yourself,Beth yw eich arwydd sidydd (zodiac sign)?,What is your zodiac sign?
+93,Introducing Yourself,Pryd mae eich pen-blwydd?,When is your birthday?
+94,Numbers,Am faint o'r gloch ydych chi'n codi yn y bore?,When do you wake up in the morning?
+95,Numbers,Am faint o'r gloch ydych chi'n cael swper fel arfer?,When do you usually have dinner/supper?
+96,Numbers,Pa oed fyddwch chi flwyddyn nesaf?,What age will you be next year?
+97,Numbers,Pa rif yw eich ffefryn?,What number is your favourite?
+98,Numbers,Beth ydy hanner pedwar deg?,What is half of forty?
+99,Numbers,Faint o funudau sydd mewn dwy awr?,How many minutes are in two hours?
+100,Numbers,Beth yw'r flwyddyn eleni?,What year is it?
+101,Numbers,Beth yw 25% fel ffracsiwn?,What is 25% as a fraction??
+102,Numbers,Faint yw dau ddeg lluosi pump?,What is twenty times five?
+103,Numbers,Beth yw pump deg dau wedi'i adio at saith deg naw?,What is fifty-two added to seventy-nine?
+104,Numbers,Beth yw'r dyddiad heddiw?,What is the date today?
+105,Numbers,"Os mae afal ar werth am bump deg ceiniog yr un, faint byddai'n costio i brynu deg ohonyn nhw?","If an apple is on sale for 50p each, how much would it cost to buy ten of them?"
+106,Numbers,Elli di gyfri o un i ddeg?,Can you count from one to ten?
+107,Places in Town,Oes siop lyfrau yn dy dref?,Is there a bookshop in your town?
+108,Places in Town,Ble yw'r lle agosaf lle gallwn i brynu bara?,Where is the closest place I could buy bread?
+109,Places in Town,Ydy'r post yn agos?,Is the post office near?
+110,Places in Town,Oes sinema yn y dref?,Is there a cinema in town?
+111,Places in Town,Ble mae'r orsaf drenau?,Where is the train station?
+112,Places in Town,Dych chi'n gwybod ble mae'r llyfrgell?,Do you know where the library is?
+113,Places in Town,Ble mae'r banc?,Where is the bank?
+114,Places in Town,Pa mor bell yw'r ganolfan siopa?,How far is the shopping centre?
+115,Places in Town,Ble mae’r siop fwyaf?,Where is the biggest shop?
+116,Places in Town,Wyt ti’n hoffi mynd i’r parc?,Do you go like going to the park?
+117,Places in Town,Oes caffi da yma?,Is there a good café here?
+118,Weather,Sut mae'r tywydd fel arfer ble rydych chi'n byw?,What's the weather usually like where you live?
+119,Weather,Oes well gyda ti byw ble mae'n boeth neu ble mae'n oer?,Do you prefer living somewhere hot or somewhere cold?
+120,Weather,Sut mae'r tywydd heddiw yn eich ardal chi?,How's the weather today where you are?
+121,Weather,Pryd mae hi'n bwrw glaw fel arfer?,When does it usually rain?
+122,Weather,Ydych chi'n hoffi mynd unrhywle yn arbennig pan mae'n heulog?,Do you like going anywhere in particular when it's sunny??
+123,Weather,Pa fath o dywydd dych chi'n hoffi mwyaf?,What kind of weather do you like the most?
+124,Weather,Beth ydych chi'n hoffi gwneud pan mae'n bwrw glaw?,What do you like to do when it's raining?
+125,Weather,Beth ydych chi'n hoffi gwneud pan mae'n bwrw eira?,What do you like to do when it's snowing?
+126,Weather,"Ydych chi erioed wedi bod mewn sefyllfa o dywydd eithafol (extreme weather), fel mewn storm neu lifog (flood)?","Have you ever been in a situation with extreme weather, like in a storm or flood?"
+127,Weather,"Pa dymor yw dy ffefryn: gaeaf, gwanwyn, haf, neu hydref?","Which is your favourite season: winter, spring, summer or autumn?"
