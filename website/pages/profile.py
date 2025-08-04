@@ -1,11 +1,6 @@
 import streamlit as st
 from website.local_functions import *
 
-if cookie_controller.get('guest_is_logged_in') == False:
-    # st.switch_page('website/pages/about.py')
-    cookie_controller.set('guest_is_logged_in', True)
-    cookie_controller.set('sub', "12345")
-
 if check_user_attribute() and (st.user.given_name or st.user.given_name != ''):
     st.title(f'Hey, {st.user.given_name}! 👋')
 elif cookie_controller.get('guest_is_logged_in'):
