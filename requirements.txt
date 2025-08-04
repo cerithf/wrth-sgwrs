@@ -1,0 +1,8 @@
+streamlit
+openai
+deep_translator
+json
+pandas
+os
+streamlit_cookies_controller 
+datetime
