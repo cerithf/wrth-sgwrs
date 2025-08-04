@@ -30,8 +30,6 @@ st.logo(path+"Wordmark.png", icon_image=path+"Icon.png")
 user_logged_in = check_user_attribute()
 logged_in = user_logged_in or cookie_controller.get('guest_is_logged_in')
 
-st.write(st.user)
-
 if logged_in:
     with st.sidebar:
         st.title("Navigation 🧭")
