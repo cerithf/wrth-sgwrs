@@ -4586,8 +4586,8 @@ index,lemma,enlemma,pos,sort,gender
 95835,eirioli,implore,verb,7dndkgd,\N
 95871,eiriolwr,advocate,noun,7dndkgtn,m
 95872,eironig,ironic,adjective,7dnkjda,
-95873,eisiau,want,noun,7dpd1s,m
-95875,eisio,want,noun,7dpdk,m
+95873,eisiau,want,verb,7dpd1s,\N
+95875,eisio,want,verb,7dpdk,\N
 95876,eisoes,already,adverb,7dpk7p,
 95911,eistedd,sit,verb,7dpq76,\N
 95931,eisteddfod,eisteddfod,noun,7dpq768k5,f
@@ -7183,7 +7183,7 @@ index,lemma,enlemma,pos,sort,gender
 143588,motor,car,noun,ikqkn,m
 143628,mowldio,mould,verb,iktg5dk,\N
 143683,mowntio,mount,verb,iktjqdk,\N
-143691,moyn,want,noun,ikuj,m
+143691,moyn,want,verb,ikuj,\N
 143692,mr,mr,noun,in,m
 143693,mud,dumb,adjective,is5,
 143741,mudferwi,poach,verb,is587ntd,\N
