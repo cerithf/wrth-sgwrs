@@ -1,0 +1,8 @@
+streamlit
+openai
+deep_translator
+pandas
+streamlit_cookies_controller 
+datetime
+Authlib
+st-gsheets-connection
