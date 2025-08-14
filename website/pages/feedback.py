@@ -46,7 +46,7 @@ with st.form("feedback_form"): # -----------------------------------------------
     key="response_welsh_ability"
 )
     
-    st.write('Which of the other resources below do you use to learn Welsh (if any)?')
+    st.write('**Which of the other resources below do you use to learn Welsh (if any)?**')
     left,right = st.columns(2)
     with left:
         for resource in other_resources[::2]:
