@@ -1,12 +1,12 @@
 import streamlit as st
 from website.local_functions import *
 
-def feedback_response(label, options, key):
-    st.write(label)
+def feedback_response(question, options, key, labels=['1','5']):
+    st.write(question)
     with st.container(horizontal=True, horizontal_alignment="left", width=300):
-        with st.container(width=5): st.write('1')
+        with st.container(width=len(labels[0]*5)): st.write(labels[0])
         output = st.feedback(options, key=f'response_{key}')
-        st.write('5')
+        st.write(labels[1])
 
     return output
 
@@ -28,19 +28,20 @@ with st.form("feedback_form"):
     st.divider() # --------------------
 
     overall_rating = feedback_response(
-        label="How would you rate _Wrth Sgwrs_ overall?",
+        question="How would you rate _Wrth Sgwrs_ overall?",
         options="stars",
         key="overall_rating"
     )
 
     ease_of_use = feedback_response(
-        label="Would you say that _Wrth Sgwrs_ is easy to use?",
+        question="How much do you agree with the statement: '_Wrth Sgwrs_ is easy to use and navigate'?",
         options="faces",
-        key="ease_of_use"
+        key="ease_of_use",
+        labels=['Disagree', 'Agree']
     )
 
     improves_welsh = feedback_response(
-        label="Do you think _Wrth Sgwrs_ would help you improve your Welsh?",
+        question="Do you think _Wrth Sgwrs_ would help you improve your Welsh?",
         options="faces",
         key="improves_welsh"
     )
