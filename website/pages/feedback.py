@@ -18,8 +18,6 @@ def feedback_response(question, options, key, number_labels=True):
 
     return output
 
-
-
 st.header('Feedback')
 
 st.write('Thank you for using _Wrth Sgwrs_! Use this page to give us feedback on how the app could be improved.')
@@ -42,7 +40,7 @@ with st.form("feedback_form"):
     )
 
     ease_of_use = feedback_response(
-        question="How much do you agree with the statement: '_Wrth Sgwrs_ is easy to use and navigate'?",
+        question="How much do you agree with the statement:\n '_Wrth Sgwrs_ is easy to use and navigate'?",
         options="faces",
         key="ease_of_use",
         number_labels=False
