@@ -1,4 +1,4 @@
-## 1. Articles (The/An)
+## 3. Articles (The/An)
 
 In English, there are two kinds of article: the **definite** article (the word "the") and the **indefinite** article (the word "a" or "an").
 

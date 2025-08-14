@@ -1,4 +1,4 @@
-## D. Berfau - Verbs
+## 7. Verbs
 
 In Welsh, there are two kinds of tenses: long-form and short-form.
 

@@ -1,4 +1,4 @@
-## C. Ansoddeiriau - Adjectives
+## 5. Adjectives
 
 1. Nearly all adjectives follow the noun in Welsh.
 

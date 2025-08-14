@@ -1,4 +1,4 @@
-## B. Enwau - Nouns
+## 4. Nouns
 
 1. All nouns in Welsh are either masculine or feminine. There is no neuter gender. Unfortunately there is no way of telling which nouns are feminine and which are masculine, so it is important to learn the gender at the same time as the meaning. In a dictionary ‘b’ (benywaidd) will denote feminine nouns and ‘g’ (gwrywaidd) will denote masculine nouns.
 2. Singular, feminine nouns undergo a Soft Mutation after the definite article ‘y’ (the) (except those words which begin with ‘ll’ and ‘rh’). See S.M. rule 1.

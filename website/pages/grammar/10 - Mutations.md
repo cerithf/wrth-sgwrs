@@ -1,4 +1,4 @@
-## G. Y Treigladau - The Mutations
+## 10. Mutations
 
 Mutations, officially "initial consonant mutations" or "grammatical mutations", are a process that happens in Welsh when the original first letter of a word gets changed due to the grammar. Welsh has 3 kinds of mutations: the soft mutation (treiglad meddal), the nasal mutation (treiglad trwynol) and the aspirate mutation (treiglad llaes). There are nine letters that can undergo mutations: three that can undergo all three mutations, three that can undergo two of them, and three that can only undergo the soft mutation. In the table below, you can see those nine letters in the "original letter" column, and the letters they mutate into in each mutation.
 
