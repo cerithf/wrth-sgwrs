@@ -1,6 +1,6 @@
 import streamlit as st
 from website.local_functions import *
-from deep_translator import GoogleTranslator, DeeplTranslator
+from deep_translator import GoogleTranslator
 from datetime import datetime as dt
 import pandas as pd
 
@@ -12,10 +12,7 @@ if 'translations' not in ss:
 if 'translation_df' not in ss:
     ss.translation_df = pd.DataFrame(columns=['Timestamp', 'Entered text', 'Translated output', 'Mode'])
 
-with st.container(horizontal=True):
-    st.title('Quick Translate')
-    translators = ['DeepL', 'Google Translate']
-    chosen_translator = st.segmented_control('Choose a translation method:',translators,default=translators[0])
+st.title('Quick Translate')
 
 control_options = ['English -> Welsh', 'Welsh -> English']
 mode = st.segmented_control(label='',options=control_options,default=control_options[0])
@@ -33,16 +30,10 @@ else:
 
 entered_text = st.text_area(label=text_area_label)
 
-def translated_text():
-    if chosen_translator == 'DeepL':
-        return DeeplTranslator(source=source_lang[1], target=targ_lang[1],api_key=st.secrets['DEEPL_API_KEY'],use_free_api=True)
-    elif chosen_translator == 'Google Translate':
-        return GoogleTranslator(source=source_lang[1], target=targ_lang[1]).translate(entered_text)
-
 data = {
     'Timestamp': dt.now().strftime('%Y-%m-%d %H:%M%:%S'),
     'Entered text': entered_text,
-    'Translated output': translated_text(),
+    'Translated output': GoogleTranslator(source=source_lang[1], target=targ_lang[1]).translate(entered_text),
     'Mode': mode
 }
 
