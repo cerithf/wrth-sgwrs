@@ -12,7 +12,9 @@ from streamlit_gsheets import GSheetsConnection
 
 cookie_controller = CookieController()
 db_connection = st.connection("gsheets", type=GSheetsConnection)
-db_users = db_connection.read(worksheet="Users", usecols=[1])['user_id'].to_list()
+db_users = db_connection.read(worksheet="Users", usecols=[1])
+
+print(db_users)
 
 # GENERAL
 
