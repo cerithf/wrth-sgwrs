@@ -1,5 +1,4 @@
 import streamlit as st
-import json
 from website.local_functions import *
 from deep_translator import GoogleTranslator as Translator
 from datetime import datetime as dt
