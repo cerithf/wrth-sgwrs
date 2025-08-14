@@ -11,10 +11,10 @@ def feedback_response(question, options, key, label_type):
         width = 60
     else:
         labels = label_type
-        width = int(len(labels[0])*5)
+        width = int(len(labels[0])*7)
 
     st.markdown(f'**{question}**')
-    with st.container(horizontal=True, horizontal_alignment="center"):
+    with st.container(horizontal=True, horizontal_alignment="center", width="stretch"):
         with st.container(width=width): st.write(labels[0])
         output = st.feedback(options, key=f'response_{key}')
         st.write(labels[1])
