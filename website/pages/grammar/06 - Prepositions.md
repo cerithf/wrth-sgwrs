@@ -19,8 +19,6 @@ Prepositions are difficult when learning a new language because they often work 
 
 In Welsh, most prepositions have personal forms. This means they take on endings depending on the pronoun that follows it. These endings match fairly closely with the verb endings found in the present tense, but watch out for exceptions.
 
-<!-- Table source: https://resources.hwb.gov.wales/VTC/ngfl/welsh/127/Nodiadau/8_Arddodiaid.pdf-->
-
 | English Pronoun  | am           | ar         | at        | gan                     | heb          | i          | o           | dan        | tros/dros                | trwy                     | wrth                | rhwng          | yn          | rhag          |
 | ---------------- | ------------ | ---------- | --------- | ----------------------- | ------------ | ---------- | ----------- | ---------- | ------------------------ | ------------------------ | ------------------- | -------------- | ----------- | ------------- |
 | I/me             | amdana(f) i  | arna(f) fi | ataf i    | gennyf i/gen i          | hebddo i     | i mi/fi    | ohono(f) i  | dana(f) i  | trosof fi/drosto i       | trwof i/trwyddo i        | wrthyf i/wrtho i    | rhyngo(f) i    | yno(f) i    | rhagddo i     |
