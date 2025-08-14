@@ -33,6 +33,6 @@ with st.form("feedback_form"):
 
 
 with st.container(horizontal=True, horizontal_alignment="left", width=300):
-    st.write('0')
+    with st.container(width=10): st.write('1')
     st.feedback('faces', key="test")
     st.write('5')
