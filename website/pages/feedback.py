@@ -50,10 +50,10 @@ with st.form("feedback_form"): # -----------------------------------------------
     left,right = st.columns(2)
     with left:
         for resource in other_resources[::2]:
-            st.checkbox(label=resource, key=f'response_{resource}')
+            st.checkbox(label=resource, key=f'other_resource_{resource}')
     with right:
         for resource in other_resources[1::2]:
-            st.checkbox(label=resource, key=f'response_{resource}')
+            st.checkbox(label=resource, key=f'other_resource_{resource}')
     
     write_in_other_resources = st.text_input('**Do you use any other resources not listed above?**')
  
@@ -110,6 +110,10 @@ with st.form("feedback_form"): # -----------------------------------------------
     submit = st.form_submit_button()
 
 if submit:
+
+    other_resources_used = [k for k,v in st.session_state.items() if type(k) == str and k[:15] == 'other_resource_' and v == True]
+    feedback_response["other_resources_used"] = ';'.join(other_resources_used)+';'+write_in_other_resources
+
     feedback_response["submitted"] = dt.datetime.now()
     feedback_db = db_connection.read(worksheet="Feedback", ttl=0)
     df = pd.concat([feedback_db, pd.DataFrame([feedback_response])], ignore_index=True)
