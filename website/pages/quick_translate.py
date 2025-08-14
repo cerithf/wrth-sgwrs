@@ -56,12 +56,5 @@ if entered_text != '':
 
 
 with st.expander(label=history_label, expanded=False, icon=':material/history:'):
-    # for entry in st.session_state.translations[::-1]:
-    #     for k,v in entry.items():
-    #         if mode == control_options[1]:
-    #             st.markdown(f'**{welsh_data_labels[k]}**: {v}')
-    #         else:
-    #             st.markdown(f'**{k}**: {v}')
-    #     st.divider()
     st.dataframe(st.session_state.translation_df.sort_values('Timestamp', ascending=False), hide_index=True)
     pass
