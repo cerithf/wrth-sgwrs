@@ -42,6 +42,18 @@ with st.form("feedback_form"): # -----------------------------------------------
     accept_new_options=False,
     key="response_welsh_ability"
 )
+    
+    uses_other_resources = st.segmented_control(
+        label="**Do you use (or have you used) other resources to learn Welsh? If so, which one(s)?**",
+        options=['Yes', 'No'],
+        default=None
+        )
+    
+    if uses_other_resources == 'Yes':
+        feedback_response["other_resources_used"] = st.text_input('Which other resources do you use to learn Welsh?')
+    elif uses_other_resources == 'No':
+        feedback_response["other_resources_used"] = "None"
+
     st.divider()
 
     feedback_response["overall_rating"] = feedback_field(
