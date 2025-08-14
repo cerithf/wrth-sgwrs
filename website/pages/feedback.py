@@ -28,7 +28,7 @@ def feedback_field(question, options, key, label_type):
 feedback_response = {'user_id': [st.user.sub if check_user_attribute() else cookie_controller.get('sub')][0]}
 
 # For the 'other resources' question
-other_resources = ['Duolingo', 'ChatGPT', 'SaySomethingInWelsh', 'iTalki', 'In-person lessons', 'online lessons', 'talking practice']
+other_resources = ['Duolingo', 'ChatGPT', 'SaySomethingInWelsh', 'iTalki', 'In-person lessons', 'Online lessons', 'Speaking practice']
 
 # ------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -55,17 +55,8 @@ with st.form("feedback_form"): # -----------------------------------------------
         for resource in other_resources[1::2]:
             st.checkbox(label=resource, key=f'response_{resource}')
     
-    uses_other_resources = st.segmented_control(
-        label="**Do you use (or have you used) other resources to learn Welsh? If so, which one(s)?**",
-        options=['Yes', 'No'],
-        default=None
-        )
-    
-    if uses_other_resources == 'Yes':
-        feedback_response["other_resources_used"] = st.text_input('Which other resources do you use to learn Welsh?')
-    elif uses_other_resources == 'No':
-        feedback_response["other_resources_used"] = "None"
-
+    write_in_other_resources = st.text_input('**Do you use any other resources not listed above?**')
+ 
     st.divider()
 
     feedback_response["overall_rating"] = feedback_field(
