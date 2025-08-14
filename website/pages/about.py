@@ -28,5 +28,7 @@ st.markdown(page_text['body'])
 
 if not logged_in:
     guest_login_form()
+else:
+    logout_button('Log out')
 
         
