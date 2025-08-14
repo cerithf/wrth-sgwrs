@@ -320,7 +320,7 @@ def logout_button(label):
 
 def guest_login_form():
     with st.form("guest_log_in"):
-        guest_username = st.text_input(label='Choose a guest username')
+        guest_username = st.text_input(label='Choose a username')
         l,r = st.columns(2)
         with l: register = st.form_submit_button("Register", use_container_width=True)
         with r: log_in = st.form_submit_button(label="Log in", use_container_width=True)
