@@ -15,7 +15,7 @@ def feedback_response(question, options, key, number_labels=True):
         with st.container(width=width): st.write(labels[0])
         output = st.feedback(options, key=f'response_{key}')
         st.write(labels[1])
-    st.container()
+    st.write(' ')
 
     return output
 
