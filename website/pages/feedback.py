@@ -22,7 +22,7 @@ def feedback_response(question, options, key, label_type):
 
     return output
 
-st.header('Feedback')
+st.header('Feedback 📋')
 
 st.write('Thank you for using _Wrth Sgwrs_! Use this page to give us feedback on how the app could be improved.')
 
@@ -52,14 +52,14 @@ with st.form("feedback_form"):
     )
 
     ease_of_use = feedback_response(
-        question="How much do you agree with the statement: \"_Wrth Sgwrs_ is easy to use and navigate.\"?",
+        question="How much do you agree with the statement: \"_Wrth Sgwrs_ is easy to use and navigate\"?",
         options="faces",
         key="ease_of_use",
         label_type="agreement"
     )
 
     freedom = feedback_response(
-        question="How much do you agree with the statement: \"I appreciate the freedom the app gives me to learn independently.\"?",
+        question="How much do you agree with the statement: \"I appreciate the freedom the app gives me to learn independently\"?",
         options="faces",
         key="freedom",
         label_type="agreement"
@@ -82,9 +82,10 @@ with st.form("feedback_form"):
 
 
     st.divider() # --------------------
+    
+    positive_feedback = st.text_area("**What do you like about the app?**", key="response_positive_feedback")
 
-    st.write("Do you have any general feedback?")
-    general_feedback = st.text_area('Write feedback here', key="response_general_feedback")
+    constructive_feedback = st.text_area("**What could be improved about the app?**", key="response_constructive_feedback")
 
     submit = st.form_submit_button()
 
