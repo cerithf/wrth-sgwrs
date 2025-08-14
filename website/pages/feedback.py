@@ -32,7 +32,7 @@ with st.form("feedback_form"):
     submit = st.form_submit_button()
 
 
-with st.container(horizontal=True, horizontal_alignment="left", width=100):
+with st.container(horizontal=True, horizontal_alignment="left", width=300):
     st.write('0')
     st.feedback('faces', key="test")
     st.write('5')
