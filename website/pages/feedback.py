@@ -1,10 +1,18 @@
 import streamlit as st
 from website.local_functions import *
 
-def feedback_response(question, options, key, labels=['1','5']):
+def feedback_response(question, options, key, number_labels=True):
+    
+    if number_labels:
+        labels=['1','5']
+        width = 5
+    else:
+        labels=['Disagree', 'Agree']
+        width = 100
+
     st.write(question)
     with st.container(horizontal=True, horizontal_alignment="left", width=300):
-        with st.container(width=len(labels[0]*5)): st.write(labels[0])
+        with st.container(width=width): st.write(labels[0])
         output = st.feedback(options, key=f'response_{key}')
         st.write(labels[1])
 
@@ -37,7 +45,7 @@ with st.form("feedback_form"):
         question="How much do you agree with the statement: '_Wrth Sgwrs_ is easy to use and navigate'?",
         options="faces",
         key="ease_of_use",
-        labels=['Disagree', 'Agree']
+        number_labels=False
     )
 
     improves_welsh = feedback_response(
