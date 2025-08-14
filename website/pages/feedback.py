@@ -13,7 +13,8 @@ with st.form("feedback_form"):
     index=None,
     accept_new_options=False,
 )
-    
+    st.divider() # --------------------
+
     st.write("How would you rate _Wrth Sgwrs_ overall?")
     overall_rating = st.feedback("faces", key="overall_rating")
 
@@ -22,6 +23,8 @@ with st.form("feedback_form"):
 
     st.write("Do you think _Wrth Sgwrs_ would help you improve your Welsh?")
     improves_welsh = st.feedback("faces", key="improves_welsh")
+
+    st.divider() # --------------------
 
     st.write("Do you have any general feedback?")
     general_feedback = st.text_area('Write feedback here')
