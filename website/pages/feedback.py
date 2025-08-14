@@ -37,7 +37,7 @@ with st.form("feedback_form"): # -----------------------------------------------
 
     feedback_response["welsh_ability"] = st.selectbox(
     label="**How would you describe your Welsh ability?**",
-    options=['None', 'Beginner', 'Intermediate', 'Advanced', 'Fluent/Native'],
+    options=['No Knowledge', 'Beginner', 'Intermediate', 'Advanced', 'Fluent/Native'],
     index=None,
     accept_new_options=False,
     key="response_welsh_ability"
