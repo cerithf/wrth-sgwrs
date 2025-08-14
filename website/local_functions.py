@@ -258,7 +258,7 @@ def show_searched_word(row):
     if word_type == 'verb':
         get_verb_details(row)
     elif word_type in ['noun', 'n']:
-        st.write(f'Gender: {row['gender'][0]}')
+        st.write(f'**Gender:** {row['gender'][0]}')
 
 
 def get_verb_details(row):
