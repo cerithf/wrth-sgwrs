@@ -82,7 +82,7 @@ with st.form("feedback_form"):
 
 
     st.divider() # --------------------
-    
+
     positive_feedback = st.text_area("**What do you like about the app?**", key="response_positive_feedback")
 
     constructive_feedback = st.text_area("**What could be improved about the app?**", key="response_constructive_feedback")
@@ -91,4 +91,6 @@ with st.form("feedback_form"):
 
 
 if submit:
+    st.toast('Thank you for submitting your feedback!')
+    st.balloons()
     st.write(st.session_state)
