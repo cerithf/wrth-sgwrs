@@ -110,17 +110,25 @@ with st.form("feedback_form"): # -----------------------------------------------
 
     feedback_response["constructive_feedback"] = st.text_area("**What could be improved about the app?**", key="response_constructive_feedback")
 
+    any_other_business = st.text_area("**Thank you for your feedback! If you have any other feedback or had any problems while evaluating the application, please write it here:**")
+
     submit = st.form_submit_button()
 
 if submit:
 
+    # Taking the checked boxes in the form and turning the answer into a string of resources used
     other_resources_used = [k.replace('other_resource_','') for k,v in st.session_state.items() if type(k) == str and k[:15] == 'other_resource_' and v == True]
     feedback_response["other_resources_used"] = '; '.join(other_resources_used)+'; '+write_in_other_resources
-    feedback_response["comparison_with_other_resources"] = comparison_with_other_resources
 
+    # Putting these answers at the end of the form for convenience
+    feedback_response["comparison_with_other_resources"] = comparison_with_other_resources
+    feedback_response["any_other_business"] = any_other_business
+
+    # Accessing and updating the database
     feedback_db = db_connection.read(worksheet="Feedback", ttl=0)
     df = pd.concat([feedback_db, pd.DataFrame([feedback_response])], ignore_index=True)
     db_connection.update(worksheet="Feedback",data=df)
 
+    # Success message for the user
     st.toast('Thank you for submitting your feedback!', icon="🎉")
     st.balloons()
