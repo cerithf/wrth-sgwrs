@@ -1,6 +1,17 @@
 import streamlit as st
 from website.local_functions import *
 
+def feedback_response(label, options, key):
+    st.write(label)
+    with st.container(horizontal=True, horizontal_alignment="left", width=300):
+        with st.container(width=5): st.write('1')
+        output = st.feedback(options, key=f'response_{key}')
+        st.write('5')
+
+    return output
+
+
+
 st.header('Feedback')
 
 st.write('Thank you for using _Wrth Sgwrs_! Use this page to give us feedback on how the app could be improved.')
@@ -12,30 +23,35 @@ with st.form("feedback_form"):
     ["None", "Beginner", "Intermediate", "Advanced", "Fluent/Native"],
     index=None,
     accept_new_options=False,
+    key="response_welsh_ability"
 )
     st.divider() # --------------------
 
-    st.write("How would you rate _Wrth Sgwrs_ overall?")
-    overall_rating = st.feedback("stars", key="overall_rating")
+    overall_rating = feedback_response(
+        label="How would you rate _Wrth Sgwrs_ overall?",
+        options="stars",
+        key="overall_rating"
+    )
 
-    st.write("Would you say that _Wrth Sgwrs_ is easy to use?")
-    ease_of_use = st.feedback("faces", key="ease_of_use")
+    ease_of_use = feedback_response(
+        label="Would you say that _Wrth Sgwrs_ is easy to use?",
+        options="faces",
+        key="ease_of_use"
+    )
 
-    st.write("Do you think _Wrth Sgwrs_ would help you improve your Welsh?")
-    improves_welsh = st.feedback("faces", key="improves_welsh")
+    improves_welsh = feedback_response(
+        label="Do you think _Wrth Sgwrs_ would help you improve your Welsh?",
+        options="faces",
+        key="improves_welsh"
+    )
 
     st.divider() # --------------------
 
     st.write("Do you have any general feedback?")
-    general_feedback = st.text_area('Write feedback here')
+    general_feedback = st.text_area('Write feedback here', key="response_general_feedback")
 
     submit = st.form_submit_button()
 
-
-with st.container(horizontal=True, horizontal_alignment="left", width=300):
-    with st.container(width=5): st.write('1')
-    st.feedback('faces', key="test")
-    st.write('5')
 
 if submit:
     st.write(st.session_state)
