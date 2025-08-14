@@ -27,6 +27,9 @@ def feedback_field(question, options, key, label_type):
 # Creating a dictionary to collect user's responses
 feedback_response = {'user_id': [st.user.sub if check_user_attribute() else cookie_controller.get('sub')][0]}
 
+# For the 'other resources' question
+other_resources = ['Duolingo', 'ChatGPT', 'SaySomethingInWelsh', 'iTalki', 'In-person lessons', 'online lessons', 'talking practice']
+
 # ------------------------------------------------------------------------------------------------------------------------------------------------------
 
 st.header('Feedback 📋')
@@ -42,6 +45,15 @@ with st.form("feedback_form"): # -----------------------------------------------
     accept_new_options=False,
     key="response_welsh_ability"
 )
+    
+    st.write('Which of the other resources below do you use to learn Welsh (if any)?')
+    left,right = st.columns(2)
+    with left:
+        for resource in other_resources[::2]:
+            st.checkbox(label=resource, key=f'response_{resource}')
+    with right:
+        for resource in other_resources[1::2]:
+            st.checkbox(label=resource, key=f'response_{resource}')
     
     uses_other_resources = st.segmented_control(
         label="**Do you use (or have you used) other resources to learn Welsh? If so, which one(s)?**",
