@@ -17,6 +17,11 @@ db_users = user_db[user_db.columns[0]].to_list()
 
 # GENERAL
 
+def deinitialize_profile_page():
+    '''Used to set 'initialize' in session state to false on other pages so that the profile page loads correctly.'''
+    if 'initialized' in st.session_state:
+        del st.session_state.initialized
+
 def check_user_attribute():
     if 'is_logged_in' in st.user:
         return st.user.is_logged_in
@@ -403,11 +408,6 @@ def load_user_topics():
             return []
     else:
         return []
-
-def deinitialize_profile_page():
-    '''Used to set 'initialize' in session state to false on other pages so that the profile page loads correctly.'''
-    if 'initialized' in st.session_state:
-        del st.session_state.initialized
 
 # FEEDBACK FORM
 
