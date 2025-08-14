@@ -2,9 +2,6 @@ import streamlit as st
 import json
 from website.local_functions import *
 
-cookie_controller = CookieController()
-
-
 def check_user_attribute():
     if 'is_logged_in' in st.user:
         return st.user.is_logged_in
