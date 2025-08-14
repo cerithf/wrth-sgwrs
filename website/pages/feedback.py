@@ -40,7 +40,7 @@ with st.form("feedback_form"):
     )
 
     ease_of_use = feedback_response(
-        question="""How much do you agree with the statement:
+        question="""How much do you agree with the statement:<br>
         \"_Wrth Sgwrs_ is easy to use and navigate\"?""",
         options="faces",
         key="ease_of_use",
