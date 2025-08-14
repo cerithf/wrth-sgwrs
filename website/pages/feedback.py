@@ -27,15 +27,6 @@ def feedback_field(question, options, key, label_type):
 # Creating a dictionary to collect user's responses
 feedback_response = {'user_id': [st.user.sub if check_user_attribute() else cookie_controller.get('sub')][0]}
 
-# Dictionary to be able to convert Welsh ability answer to integers
-welsh_ability_options = {
-    'None': 0,
-    'Beginner': 1,
-    'Intermediate': 2,
-    'Advanced': 3,
-    'Fluent/Native': 4
-}
-
 # ------------------------------------------------------------------------------------------------------------------------------------------------------
 
 st.header('Feedback 📋')
@@ -46,7 +37,7 @@ with st.form("feedback_form"): # -----------------------------------------------
 
     feedback_response["welsh_ability"] = st.selectbox(
     label="**How would you describe your Welsh ability?**",
-    options=welsh_ability_options.keys(),
+    options=['None', 'Beginner', 'Intermediate', 'Advanced', 'Fluent/Native'],
     index=None,
     accept_new_options=False,
     key="response_welsh_ability"
@@ -105,8 +96,6 @@ with st.form("feedback_form"): # -----------------------------------------------
 
 
 if submit:
-    if feedback_response['welsh_ability'] != None:
-        feedback_response["welsh_ability"] = welsh_ability_options[feedback_response['welsh_ability']]
     save_feedback(feedback_response)
     st.toast('Thank you for submitting your feedback!', icon="🎉")
     st.balloons()
