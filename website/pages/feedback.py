@@ -97,7 +97,7 @@ with st.form("feedback_form"): # -----------------------------------------------
         label_type="agreement"
     )
 
-    feedback_response["resources"] = feedback_field(
+    feedback_response["convenience_of_resources"] = feedback_field(
         question="Is the convenience of having multiple resources in one place important to you when learning a language?",
         options="faces",
         key="resources",
@@ -118,7 +118,6 @@ if submit:
     feedback_response["other_resources_used"] = '; '.join(other_resources_used)+'; '+write_in_other_resources
     feedback_response["comparison_with_other_resources"] = comparison_with_other_resources
 
-    feedback_response["submitted"] = dt.datetime.now()
     feedback_db = db_connection.read(worksheet="Feedback", ttl=0)
     df = pd.concat([feedback_db, pd.DataFrame([feedback_response])], ignore_index=True)
     db_connection.update(worksheet="Feedback",data=df)
