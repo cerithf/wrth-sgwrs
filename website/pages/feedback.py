@@ -112,7 +112,7 @@ with st.form("feedback_form"): # -----------------------------------------------
 if submit:
 
     other_resources_used = [k.replace('other_resource_','') for k,v in st.session_state.items() if type(k) == str and k[:15] == 'other_resource_' and v == True]
-    feedback_response["other_resources_used"] = ';'.join(other_resources_used)+';'+write_in_other_resources
+    feedback_response["other_resources_used"] = '; '.join(other_resources_used)+'; '+write_in_other_resources
 
     feedback_response["submitted"] = dt.datetime.now()
     feedback_db = db_connection.read(worksheet="Feedback", ttl=0)
