@@ -28,7 +28,8 @@ def feedback_field(question, options, key, label_type):
 feedback_response = {'user_id': [st.user.sub if check_user_attribute() else cookie_controller.get('sub')][0]}
 
 # For the 'other resources' question
-other_resources = ['Duolingo', 'ChatGPT', 'SaySomethingInWelsh', 'iTalki', 'In-person lessons', 'Online lessons', 'Speaking practice']
+other_resources = ['Duolingo', 'ChatGPT', 'SaySomethingInWelsh', 'iTalki', 'In-person lessons', 'Online lessons', 
+                   'Speaking practice', 'Social media']
 
 # ------------------------------------------------------------------------------------------------------------------------------------------------------
 
