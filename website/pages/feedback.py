@@ -91,6 +91,6 @@ with st.form("feedback_form"):
 
 
 if submit:
+    save_feedback()
     st.toast('Thank you for submitting your feedback!', icon="🎉")
     st.balloons()
-    st.write(st.session_state)

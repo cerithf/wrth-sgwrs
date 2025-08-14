@@ -410,3 +410,13 @@ def deinitialize_profile_page():
         del st.session_state.initialized
 
 # FEEDBACK FORM
+
+def save_feedback():
+    now = dt.datetime.now()
+    user_id = [st.user.sub if check_user_attribute() else cookie_controller.get('sub')][0]
+    feedback = {k:v for k,v in st.session_state.items() if type(k) == str and k[:8] == 'feedback'}
+    data = [{'user_id': user_id}, {'timestamp': now}]+[{k.replace('feedback_',''):v} for k,v in feedback.items()]
+
+    feedback_db = db_connection.read(worksheet="Feedback", usecols=[1])
+    df = pd.concat([feedback_db, pd.DataFrame(data)], ignore_index=True)
+    db_connection.update(worksheet="Feedback",data=df)
