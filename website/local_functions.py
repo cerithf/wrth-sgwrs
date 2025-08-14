@@ -28,9 +28,6 @@ def check_user_attribute():
     else:
         return None
 
-def p(x):
-    for i in range(x): print()
-
 def get_key_from_value(value, dict):
     return [key for key in dict.keys() if dict[key]==value][0]
 
@@ -74,15 +71,6 @@ def files_in_directory(directory):
     return [(clean_filename(filepath), filepath) for filepath in filepaths]
 
 # BUTTON FUNCTIONS
-
-def new_conversation_button():
-    
-    with open('pages/conversations/conversations.py') as file:
-        template = file.read()
-
-    num_prior_conversations = len(files_in_directory('pages/conversations'))
-    with open(f'pages/conversations/conversation_{num_prior_conversations+1}.py', 'w') as file:
-        file.write(template)
 
 def button_press(result, topic, switch_page=False):
     df = get_data('topic_questions',2,'df')
@@ -396,8 +384,3 @@ def load_user_topics():
             return []
     else:
         return []
-
-# FEEDBACK FORM
-
-def save_feedback(feedback_dictionary):
-    data = [feedback_dictionary]
