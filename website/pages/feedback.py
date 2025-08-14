@@ -56,6 +56,8 @@ with st.form("feedback_form"): # -----------------------------------------------
             st.checkbox(label=resource, key=f'other_resource_{resource}')
     
     write_in_other_resources = st.text_input('**Do you use any other resources not listed above?**')
+
+    comparison_with_other_resources = st.text_area('**How does _Wrth Sgwrs_ compare with other resources you\'ve used to learn Welsh?**')
  
     st.divider()
 
@@ -113,6 +115,7 @@ if submit:
 
     other_resources_used = [k.replace('other_resource_','') for k,v in st.session_state.items() if type(k) == str and k[:15] == 'other_resource_' and v == True]
     feedback_response["other_resources_used"] = '; '.join(other_resources_used)+'; '+write_in_other_resources
+    feedback_response["comparison_with_other_resources"] = comparison_with_other_resources
 
     feedback_response["submitted"] = dt.datetime.now()
     feedback_db = db_connection.read(worksheet="Feedback", ttl=0)
