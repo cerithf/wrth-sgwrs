@@ -16,7 +16,7 @@ with st.form("feedback_form"):
     st.divider() # --------------------
 
     st.write("How would you rate _Wrth Sgwrs_ overall?")
-    overall_rating = st.feedback("faces", key="overall_rating")
+    overall_rating = st.feedback("stars", key="overall_rating")
 
     st.write("Would you say that _Wrth Sgwrs_ is easy to use?")
     ease_of_use = st.feedback("faces", key="ease_of_use")
@@ -30,3 +30,9 @@ with st.form("feedback_form"):
     general_feedback = st.text_area('Write feedback here')
 
     submit = st.form_submit_button()
+
+
+with st.container(horizontal_alignment="left"):
+    st.write('0')
+    st.feedback('faces', key="test")
+    st.write('5')
