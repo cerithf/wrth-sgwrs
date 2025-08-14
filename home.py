@@ -2,7 +2,7 @@ import streamlit as st
 import json
 from website.local_functions import *
 
-st.write(db_users)
+st.write(type(db_users))
 
 def check_user_attribute():
     if 'is_logged_in' in st.user:
