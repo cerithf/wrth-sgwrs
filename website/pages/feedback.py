@@ -94,8 +94,11 @@ with st.form("feedback_form"): # -----------------------------------------------
 
     submit = st.form_submit_button()
 
-
 if submit:
-    save_feedback(feedback_response)
+    feedback_response["submitted"] = dt.datetime.now()
+    feedback_db = db_connection.read(worksheet="Feedback", ttl=0)
+    df = pd.concat([feedback_db, pd.DataFrame([feedback_response])], ignore_index=True)
+    db_connection.update(worksheet="Feedback",data=df)
+
     st.toast('Thank you for submitting your feedback!', icon="🎉")
     st.balloons()
