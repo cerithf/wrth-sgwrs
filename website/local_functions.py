@@ -412,8 +412,7 @@ def deinitialize_profile_page():
 # FEEDBACK FORM
 
 def save_feedback(feedback_dictionary):
-    data = [{k:v} for k,v in feedback_dictionary.items()]
-    st.write(data)
+    data = [feedback_dictionary]
     feedback_db = db_connection.read(worksheet="Feedback", ttl=0)
     df = pd.concat([feedback_db, pd.DataFrame(data)], ignore_index=True)
     db_connection.update(worksheet="Feedback",data=df)
