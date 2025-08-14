@@ -18,10 +18,10 @@ with st.form("feedback_form"):
     overall_rating = st.feedback("faces")
 
     st.write("Would you say that _Wrth Sgwrs_ is easy to use?")
-    overall_rating = st.feedback("faces")
+    ease_of_use = st.feedback("faces")
 
     st.write("Do you think _Wrth Sgwrs_ would help you improve your Welsh?")
-    overall_rating = st.feedback("faces")
+    improves_welsh = st.feedback("faces")
 
     st.write("Do you have any general feedback?")
     general_feedback = st.text_area('Write feedback here')
