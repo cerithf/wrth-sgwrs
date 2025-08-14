@@ -8,7 +8,7 @@ def feedback_response(question, options, key, number_labels=True):
         width = 5
     else:
         labels=['Disagree', 'Agree']
-        width = 100
+        width = 80
 
     st.write(question)
     with st.container(horizontal=True, horizontal_alignment="left", width=300):
