@@ -407,3 +407,5 @@ def deinitialize_profile_page():
     '''Used to set 'initialize' in session state to false on other pages so that the profile page loads correctly.'''
     if 'initialized' in st.session_state:
         del st.session_state.initialized
+
+# FEEDBACK FORM
