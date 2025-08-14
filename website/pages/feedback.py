@@ -9,6 +9,7 @@ def feedback_response(question, options, key, number_labels=True):
     else:
         labels=['Disagree', 'Agree']
         width = 60
+        st.write('How much do you agree with the statement:')
 
     st.write(f'**{question}**')
     with st.container(horizontal=True, horizontal_alignment="left", width=300):
@@ -40,7 +41,7 @@ with st.form("feedback_form"):
     )
 
     ease_of_use = feedback_response(
-        question="How much do you agree with the statement:\n '_Wrth Sgwrs_ is easy to use and navigate'?",
+        question="\"_Wrth Sgwrs_ is easy to use and navigate\"?",
         options="faces",
         key="ease_of_use",
         number_labels=False
