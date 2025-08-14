@@ -319,18 +319,6 @@ def return_row_info(row,pronoun,pronoun_dict):
     
 # AUTHENTICATION
 
-def generate_cookie(x):
-    from string import ascii_letters as a
-    from random import choice
-
-    a = a + '0123456789'
-
-    return ''.join([choice(a) for i in range(x)])
-
-def google_login_button(label):
-    if st.button(label, icon="🔑", use_container_width=True):
-        st.login("google")
-
 def logout_button(label):
     if st.button(label, icon="🔒"):
         if 'guest_is_logged_in' in cookie_controller.getAll():
