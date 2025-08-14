@@ -58,7 +58,7 @@ with st.form("feedback_form"): # -----------------------------------------------
     
     write_in_other_resources = st.text_input('**Do you use any other resources not listed above?**')
 
-    comparison_with_other_resources = st.text_area('**How does _Wrth Sgwrs_ compare with other resources you\'ve used to learn Welsh?**')
+    comparison_with_other_resources = st.text_area('**What features are most important to you in a language-learning app? How does _Wrth Sgwrs_ compare with other resources you\'ve used to learn Welsh?**')
  
     st.divider()
 
