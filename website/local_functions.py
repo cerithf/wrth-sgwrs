@@ -311,7 +311,7 @@ def logout_button(label):
     if st.button(label, icon="🔒"):
         if 'guest_is_logged_in' in cookie_controller.getAll():
             cookie_controller.set('guest_is_logged_in', False)
-            cookie_controller.remove('sub')
+            if 'sub' in cookie_controller.getAll(): cookie_controller.remove('sub')
             st.switch_page('website/pages/about.py')
             st.sidebar('Close')
             st.rerun()
