@@ -6,6 +6,7 @@ import pandas as pd
 
 ss = st.session_state
 page_setup()
+check_access()
 
 if 'translations' not in ss:
     ss.translations = []

@@ -1,7 +1,6 @@
 import streamlit as st
 from website.local_functions import *
 
-
 # Creates a cleaner layout for feedback field
 def feedback_field(question, options, key, label_type):
     

@@ -5,7 +5,7 @@ if is_logged_in():
     guest_username = str(st.session_state["sub"]).replace('guest_','')
     st.title(f'Hey, {guest_username.title()}! 👋')
 else:
-    st.title(f'Hey there! 👋')
+    redirect_to_welcome_screen()
 
 # list of indices of the topics already learnt by user
 learnt_topics = load_user_topics()

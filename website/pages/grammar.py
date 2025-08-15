@@ -5,6 +5,7 @@ import os
 
 ss = st.session_state
 page_setup()
+check_access()
 
 # Creating a list of markdown files in the appropriate folder
 

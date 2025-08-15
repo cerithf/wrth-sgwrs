@@ -312,13 +312,20 @@ def return_row_info(row,pronoun,pronoun_dict):
     
 # AUTHENTICATION
 
+def redirect_to_welcome_screen():
+    st.switch_page('website/pages/about.py')
+    st.sidebar('Close')
+    st.rerun()
+
+def check_access():
+    if not is_logged_in():
+        redirect_to_welcome_screen()
+
 def logout_button(label):
     if st.button(label, icon="🔒"):
         if "logged_in" in st.session_state: st.session_state["logged_in"] = False
         if "sub" in st.session_state: del st.session_state.sub
-        st.switch_page('website/pages/about.py')
-        st.sidebar('Close')
-        st.rerun()
+        redirect_to_welcome_screen()
         # if 'guest_is_logged_in' in cc.getAll():
         #     cc.set('guest_is_logged_in', False)
         #     if 'sub' in cc.getAll(): cc.remove('sub')
@@ -357,11 +364,6 @@ def guest_login(guest_id):
     st.session_state["sub"] = guest_id
     st.session_state["logged_in"] = True
     st.session_state["user_topics"] = load_user_topics()
-
-def check_access():
-    '''Fixes issue where guest is viewing page other than 'about' and sidebar disappears.'''
-    if ("logged_in" not in st.session_state) or (st.session_state["logged_in"] == False):
-        st.switch_page('website/pages/about.py')
 
 # SAVING & LOADING USER TOPICS
 

@@ -6,6 +6,7 @@ from website.local_functions import *
 
 ss = st.session_state
 page_setup()
+check_access()
 if "messages" not in ss:
     ss.messages = []
     ss.chosen_topic = None

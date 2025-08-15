@@ -10,6 +10,7 @@ import pandas as pd
 
 page_setup()
 ss = st.session_state
+check_access()
 
 initial_state = {
     'chosen_question': None,

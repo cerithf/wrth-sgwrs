@@ -5,6 +5,7 @@ import pandas as pd
 
 ss = st.session_state
 page_setup()
+check_access()
 
 search,browse = st.tabs(['Search','Browse'])
 
