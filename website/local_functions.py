@@ -352,14 +352,14 @@ def check_access():
 
 # SAVING & LOADING USER TOPICS
 
-def save_user_topics(topics):
-    topics = ';'.join([str(num) for num in sorted(topics)])
+def save_user_topics(input_topics):
+    topics = ';'.join([str(num) for num in sorted(input_topics)])
     user_id = [st.user.sub if check_user_attribute() else cookie_controller.get('sub')][0]
     now = dt.datetime.now()
     data = [{'user_id': user_id, 'topics': topics, 'last_updated': now}]
 
     df = db_connection.read(worksheet="Users", ttl=0)
-    if topics == []:
+    if input_topics == []:
         df = pd.concat([df, pd.DataFrame(data)], ignore_index=True)
     else:
         i = df[df['user_id'] == user_id].index.to_list()[0]
