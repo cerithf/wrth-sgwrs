@@ -64,7 +64,7 @@ def topic_container(topic):
 ''')
         l,r = st.columns(2)
         with l:
-            result = st.button('Practice', key=f'practice_{topic['index']}')
+            result = st.button('Practice', icon='🗣️', key=f'practice_{topic['index']}')
             if result: button_press(result, topic, True)
         with r:
             check = st.checkbox('Learnt?', key=f'checkbox_{topic['index']}', value= topic['index'] in checked_boxes)
