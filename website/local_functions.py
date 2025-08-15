@@ -359,7 +359,7 @@ def save_user_topics(topics):
     data = [{'user_id': user_id, 'topics': topics, 'last_updated': now}]
 
     df = db_connection.read(worksheet="Users", ttl=0)
-    if user_id not in db_users:
+    if topics == []:
         df = pd.concat([df, pd.DataFrame(data)], ignore_index=True)
     else:
         i = df[df['user_id'] == user_id].index.to_list()[0]
