@@ -13,7 +13,13 @@ from streamlit_gsheets import GSheetsConnection
 db_connection = st.connection("gsheets", type=GSheetsConnection)
 user_db = db_connection.read(worksheet="Users", usecols=[1])
 db_users = user_db[user_db.columns[0]].to_list()
-cookie_controller = CookieController()
+
+
+if "cookie_controller" not in st.session_state:
+    st.session_state["cookie_controller"] = CookieController()
+    cc = st.session_state["cookie_controller"]
+else:
+    cc = st.session_state["cookie_controller"]
 
 # GENERAL
 
@@ -309,9 +315,9 @@ def return_row_info(row,pronoun,pronoun_dict):
 
 def logout_button(label):
     if st.button(label, icon="🔒"):
-        if 'guest_is_logged_in' in cookie_controller.getAll():
-            cookie_controller.set('guest_is_logged_in', False)
-            if 'sub' in cookie_controller.getAll(): cookie_controller.remove('sub')
+        if 'guest_is_logged_in' in cc.getAll():
+            cc.set('guest_is_logged_in', False)
+            if 'sub' in cc.getAll(): cc.remove('sub')
             st.switch_page('website/pages/about.py')
             st.sidebar('Close')
             st.rerun()
@@ -341,20 +347,20 @@ def guest_login_form():
                 st.error("User not found, try checking your spelling or registering a new username.", icon="⚠️")
 
 def guest_login(guest_id):
-    cookie_controller.set('sub', guest_id)
-    cookie_controller.set('guest_is_logged_in', True)
-    cookie_controller.set('user_topics', load_user_topics())
+    cc.set('sub', guest_id)
+    cc.set('guest_is_logged_in', True)
+    cc.set('user_topics', load_user_topics())
 
 def check_access():
     '''Fixes issue where guest is viewing page other than 'about' and sidebar disappears.'''
-    if (not check_user_attribute()) and (not cookie_controller.get('guest_is_logged_in')):
+    if (not check_user_attribute()) and (not cc.get('guest_is_logged_in')):
         st.switch_page('website/pages/about.py')
 
 # SAVING & LOADING USER TOPICS
 
 def save_user_topics(input_topics):
     topics = ';'.join([str(num) for num in sorted(input_topics)])
-    user_id = [st.user.sub if check_user_attribute() else cookie_controller.get('sub')][0]
+    user_id = [st.user.sub if check_user_attribute() else cc.get('sub')][0]
     now = dt.datetime.now()
     data = [{'user_id': user_id, 'topics': topics, 'last_updated': now}]
 
@@ -369,7 +375,7 @@ def save_user_topics(input_topics):
     db_connection.update(worksheet="Users",data=df)
 
 def load_user_topics():
-    user_id = [st.user.sub if check_user_attribute() else cookie_controller.get('sub')][0]
+    user_id = [st.user.sub if check_user_attribute() else cc.get('sub')][0]
     df = db_connection.read(worksheet="Users", ttl=0)
 
     if user_id in db_users:

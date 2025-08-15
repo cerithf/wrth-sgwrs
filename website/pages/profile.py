@@ -5,8 +5,8 @@ user_logged_in = check_user_attribute()
 
 if user_logged_in and (st.user.given_name or st.user.given_name != ''):
     st.title(f'Hey, {st.user.given_name}! 👋')
-elif cookie_controller.get('guest_is_logged_in'):
-    guest_username = str(cookie_controller.get('sub')).replace('guest_','')
+elif cc.get('guest_is_logged_in'):
+    guest_username = str(cc.get('sub')).replace('guest_','')
     st.title(f'Hey, {guest_username.title()}! 👋')
 else:
     st.title(f'Hey there! 👋')
