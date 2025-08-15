@@ -14,12 +14,8 @@ db_connection = st.connection("gsheets", type=GSheetsConnection)
 user_db = db_connection.read(worksheet="Users", usecols=[1])
 db_users = user_db[user_db.columns[0]].to_list()
 
-
-if "cookie_controller" not in st.session_state:
-    st.session_state["cookie_controller"] = CookieController()
-    cc = st.session_state["cookie_controller"]
-else:
-    cc = st.session_state["cookie_controller"]
+st.session_state["cookie_controller"] = CookieController()
+cc = st.session_state["cookie_controller"]
 
 # GENERAL
 
