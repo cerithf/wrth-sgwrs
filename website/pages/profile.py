@@ -1,12 +1,8 @@
 import streamlit as st
 from website.local_functions import *
 
-user_logged_in = check_user_attribute()
-
-if user_logged_in and (st.user.given_name or st.user.given_name != ''):
-    st.title(f'Hey, {st.user.given_name}! 👋')
-elif cc.get('guest_is_logged_in'):
-    guest_username = str(cc.get('sub')).replace('guest_','')
+if is_logged_in():
+    guest_username = str(st.session_state["sub"]).replace('guest_','')
     st.title(f'Hey, {guest_username.title()}! 👋')
 else:
     st.title(f'Hey there! 👋')

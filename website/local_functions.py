@@ -27,12 +27,6 @@ def deinitialize_profile_page():
     if 'initialized' in st.session_state:
         del st.session_state.initialized
 
-def check_user_attribute():
-    if 'is_logged_in' in st.user:
-        return st.user.is_logged_in
-    else:
-        return None
-
 def get_key_from_value(value, dict):
     return [key for key in dict.keys() if dict[key]==value][0]
 
@@ -51,6 +45,12 @@ def sort_dict(dict):
 def page_setup():
     check_access()
     deinitialize_profile_page()
+
+def is_logged_in():
+    if ('logged_in' in st.session_state) and (st.session_state["logged_in"] == True):
+        return True
+    else:
+        return False
 
 
 # SAVING CONVERSATIONS
@@ -314,52 +314,61 @@ def return_row_info(row,pronoun,pronoun_dict):
 
 def logout_button(label):
     if st.button(label, icon="🔒"):
-        if 'guest_is_logged_in' in cc.getAll():
-            cc.set('guest_is_logged_in', False)
-            if 'sub' in cc.getAll(): cc.remove('sub')
-            st.switch_page('website/pages/about.py')
-            st.sidebar('Close')
-            st.rerun()
-        elif check_user_attribute():
-            st.logout()
+        if "logged_in" in st.session_state: st.session_state["logged_in"] = False
+        if "sub" in st.session_state: del st.session_state.sub
+        st.switch_page('website/pages/about.py')
+        st.sidebar('Close')
+        st.rerun()
+        # if 'guest_is_logged_in' in cc.getAll():
+        #     cc.set('guest_is_logged_in', False)
+        #     if 'sub' in cc.getAll(): cc.remove('sub')
+        #     st.switch_page('website/pages/about.py')
+        #     st.sidebar('Close')
+        #     st.rerun()
+        # elif check_user_attribute():
+        #     st.logout()
 
 def guest_login_form():
     with st.form("guest_log_in"):
-        guest_username = st.text_input(label='Choose a username')
+        username = st.text_input(label='Choose a username')
         l,r = st.columns(2)
         with l: register = st.form_submit_button("Register", use_container_width=True)
         with r: log_in = st.form_submit_button(label="Log in", use_container_width=True)
     if register or log_in:
-        guest_id = 'guest_'+guest_username
+        guest_id = 'guest_'+username
         if register:
             if guest_id in db_users:
                 st.error("Username already taken, please use another one!", icon="⚠️")
             else:
-                st.info(f"Username set. Welcome, {guest_username}!")
+                st.info(f"Username set. Welcome, {username}!")
                 guest_login(guest_id)
                 save_user_topics([])
         elif log_in:
             if guest_id in db_users:
-                st.info(f'User found. Welcome back, {guest_username}!')
+                st.info(f'User found. Welcome back, {username}!')
                 guest_login(guest_id)
             else:
                 st.error("User not found, try checking your spelling or registering a new username.", icon="⚠️")
 
 def guest_login(guest_id):
-    cc.set('sub', guest_id)
-    cc.set('guest_is_logged_in', True)
-    cc.set('user_topics', load_user_topics())
+    # cc.set('sub', guest_id)
+    # cc.set('guest_is_logged_in', True)
+    # cc.set('user_topics', load_user_topics())
+    st.session_state["sub"] = guest_id
+    st.session_state["logged_in"] = True
+    st.session_state["user_topics"] = load_user_topics()
 
 def check_access():
     '''Fixes issue where guest is viewing page other than 'about' and sidebar disappears.'''
-    if (not check_user_attribute()) and (not cc.get('guest_is_logged_in')):
+    if ("logged_in" not in st.session_state) or (st.session_state["logged_in"] == False):
         st.switch_page('website/pages/about.py')
 
 # SAVING & LOADING USER TOPICS
 
 def save_user_topics(input_topics):
     topics = ';'.join([str(num) for num in sorted(input_topics)])
-    user_id = [st.user.sub if check_user_attribute() else cc.get('sub')][0]
+    # user_id = [st.user.sub if check_user_attribute() else cc.get('sub')][0]
+    user_id = st.session_state["sub"]
     now = dt.datetime.now()
     data = [{'user_id': user_id, 'topics': topics, 'last_updated': now}]
 
@@ -374,7 +383,8 @@ def save_user_topics(input_topics):
     db_connection.update(worksheet="Users",data=df)
 
 def load_user_topics():
-    user_id = [st.user.sub if check_user_attribute() else cc.get('sub')][0]
+    # user_id = [st.user.sub if check_user_attribute() else cc.get('sub')][0]
+    user_id = st.session_state["sub"]
     df = db_connection.read(worksheet="Users", ttl=0)
 
     if user_id in db_users:

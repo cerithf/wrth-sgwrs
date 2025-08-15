@@ -7,9 +7,6 @@ deinitialize_profile_page()
 ss = st.session_state
 if 'chosen_topic' not in ss: ss.chosen_topic = None
 
-user_logged_in = check_user_attribute()
-
-logged_in = user_logged_in or (cc.get('guest_is_logged_in'))
 left, right = st.columns([0.65,0.35])
 
 with right:
@@ -26,9 +23,7 @@ else:
 
 st.markdown(page_text['body'])
 
-if not logged_in:
+if not is_logged_in():
     guest_login_form()
 else:
     logout_button('Log out')
-
-        

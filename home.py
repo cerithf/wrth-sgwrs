@@ -2,12 +2,6 @@ import streamlit as st
 import json
 from website.local_functions import *
 
-def check_user_attribute():
-    if 'is_logged_in' in st.user:
-        return st.user.is_logged_in
-    else:
-        return None
-
 st.set_page_config(
     page_title='Wrth Sgwrs',
     page_icon='🏴󠁧󠁢󠁷󠁬󠁳󠁿',
@@ -32,10 +26,8 @@ st.navigation(pages, position='hidden').run()
 path = 'website/assets/'
 st.logo(path+"Wordmark.png", icon_image=path+"Icon.png")
 
-user_logged_in = check_user_attribute()
-logged_in = user_logged_in or cc.get('guest_is_logged_in')
 
-if logged_in:
+if is_logged_in():
     with st.sidebar:
         st.title("Navigation 🧭")
         st.subheader('Home')

@@ -25,7 +25,7 @@ def feedback_field(question, options, key, label_type):
     return output
 
 # Creating a dictionary to collect user's responses
-feedback_response = {'user_id': [st.user.sub if check_user_attribute() else cc.get('sub')][0]}
+feedback_response = {'user_id': [st.session_state["sub"] if is_logged_in() else "unknown"][0]}
 
 # For the 'other resources' question
 other_resources = ['Duolingo', 'ChatGPT (or similar)', 'SaySomethingInWelsh', 'iTalki', 'In-person lessons', 
