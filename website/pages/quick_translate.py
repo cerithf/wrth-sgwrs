@@ -29,6 +29,7 @@ else:
     text_area_label = f'_Ysgrifennwch rywbeth yn y blwch isod i\'w gyfieithu i Saesneg. Defnyddiwch ⌘↵ i fewnfudo\'r testun._'
     history_label = '**Hanes**'
 
+
 entered_text = st.text_area(label=text_area_label)
 
 data = {
