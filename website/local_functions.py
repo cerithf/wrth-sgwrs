@@ -295,8 +295,9 @@ def get_verb_details(row):
         verb_forms[k].extend(['']*(max_value_length-len(v)))
 
     verb_forms = pd.DataFrame(verb_forms)
-    st.dataframe(verb_forms, hide_index=True)
-    st.write('_* Spoken form_')
+    if len(verb_forms) > 0:
+        st.dataframe(verb_forms, hide_index=True)
+        st.write('_* Spoken form_')
 
 def return_row_info(row,pronoun,pronoun_dict):
     if row['number'] == pronoun:
