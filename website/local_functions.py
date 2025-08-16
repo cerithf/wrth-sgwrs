@@ -354,6 +354,7 @@ def guest_login(guest_id):
     st.session_state["logged_in"] = True
     st.session_state["user_topics"] = load_user_topics()
     st.rerun()
+    st.sidebar('Open')
 
 # SAVING & LOADING USER TOPICS
 
