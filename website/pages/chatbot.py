@@ -39,13 +39,16 @@ with r:
 prompt = st.chat_input("Type here...")
 
 def return_right_thing(return_question=False):
-    ''' If a user has submitted a prompt, the prompt is input to the AI. If they've chosen a random question to start, either a contextual prompt containing the question is returned or just the question itself.'''
+    ''' If a user has submitted a prompt, the prompt is input to the AI. If they've chosen a random question to start, either a contextual prompt containing the question is returned or just the question itself, depending on the value of return_question'''
+    
     if prompt:
         return prompt
     elif ss.chosen_question:
+
         if return_question:
             return ss.chosen_question[0]
         else:
+
             if ss.chosen_question[1]['en'] == 'Numbers':
                 full_prompt = f"""I am a Welsh learner and I would like to practise speaking Welsh to you.
                 Let's have a conversation about the topic of {ss.chosen_question[1]['en']}.
@@ -56,14 +59,15 @@ def return_right_thing(return_question=False):
                 full_prompt = f"""I am a Welsh learner and I would like to practise speaking Welsh to you.
                 Let's have a conversation about the topic of {ss.chosen_question[1]['en']}.
                 I'll begin by asking you a question — please respond in Welsh as if you were a Welsh person, not an AI language model. 
-                At the end of your response, ask me the same question in return. In your SECOND, ask another question on the same topic to keep the conversation going, don't ask if there's something else I want to talk about. Do not mention anything about continuing the conversation in your first response.
+                At the end of your first response, ask me the same question in return. In your SECOND, ask another question on the same topic to keep the conversation going, don't ask if there's something else I want to talk about. Do not mention anything about continuing the conversation in your first response.
                 {ss.chosen_question[0]}"""
-            if "zodiac" not in ss.chosen_question[0]:
-                return full_prompt
-            else:
+
+            if "zodiac" in ss.chosen_question[0]:
                 zodiac_table = pd.read_csv( 'website/data/zodiac.csv')
                 full_prompt += f"\n  In your answer, provide a table using this as the source: {zodiac_table}"""
-                return full_prompt
+
+            return full_prompt
+            
     else:
         return "error"
 
