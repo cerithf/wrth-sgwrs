@@ -326,14 +326,6 @@ def logout_button(label):
         if "logged_in" in st.session_state: st.session_state["logged_in"] = False
         if "sub" in st.session_state: del st.session_state.sub
         redirect_to_welcome_screen()
-        # if 'guest_is_logged_in' in cc.getAll():
-        #     cc.set('guest_is_logged_in', False)
-        #     if 'sub' in cc.getAll(): cc.remove('sub')
-        #     st.switch_page('website/pages/about.py')
-        #     st.sidebar('Close')
-        #     st.rerun()
-        # elif check_user_attribute():
-        #     st.logout()
 
 def guest_login_form():
     with st.form("guest_log_in"):
@@ -358,12 +350,10 @@ def guest_login_form():
                 st.error("User not found, try checking your spelling or registering a new username.", icon="⚠️")
 
 def guest_login(guest_id):
-    # cc.set('sub', guest_id)
-    # cc.set('guest_is_logged_in', True)
-    # cc.set('user_topics', load_user_topics())
     st.session_state["sub"] = guest_id
     st.session_state["logged_in"] = True
     st.session_state["user_topics"] = load_user_topics()
+    st.rerun()
 
 # SAVING & LOADING USER TOPICS
 
