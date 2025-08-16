@@ -38,14 +38,6 @@ data = {
     'Mode': mode
 }
 
-welsh_data_labels = {
-    'Timestamp': 'Amser mewnfudwyd',
-    'Entered text': 'Testun mewnbwn',
-    'Source language': 'Iaith wreiddiol',
-    'Translated output': 'Allbwn a gyfieithwyd',
-    'Output language': 'Iaith yr allbwn'
-}
-
 if entered_text != '':
     st.markdown('#### Translated output:')
     st.write(data['Translated output'])
@@ -56,4 +48,3 @@ if entered_text != '':
 
 with st.expander(label=history_label, expanded=False, icon=':material/history:'):
     st.dataframe(st.session_state.translation_df.sort_values('Timestamp', ascending=False), hide_index=True)
-    pass
