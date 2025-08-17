@@ -78,12 +78,11 @@ def files_in_directory(directory):
 
 # BUTTON FUNCTIONS
 
-def practise_topic_button(topic, switch_page):
+def practise_topic_button(topic):
     df = get_data('topic_questions',2,'df')
     question = choice(list(df[df['topic'] == topic['en']]['cy'])) # type: ignore
     ss.chosen_question = (question, topic)
-    if switch_page:
-        st.switch_page('website/pages/chatbot.py')
+    st.switch_page('website/pages/chatbot.py')
    
 # INTERACTING WITH JSON DATA
 
