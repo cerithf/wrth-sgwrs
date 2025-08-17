@@ -397,13 +397,15 @@ def load_user_topics():
 
 # TESTING "TEST YOURSELF" FEATURE
 
-def save_ai_response(input, topic, response):
+def save_ai_response(input, topic, response, model, prompt):
     df = db_connection.read(worksheet="Test_Yourself", ttl=0)
     data = [{
         'input': input,
         'topic': topic,
         'response': response,
-        'timestamp': dt.datetime.now().strftime('%d-%m-%Y %X')
+        'timestamp': dt.datetime.now().strftime('%d-%m-%Y %X'),
+        'model': model,
+        'prompt': prompt
     }]
     df = pd.concat([df,pd.DataFrame(data)], ignore_index=True)
     db_connection.update(worksheet="Test_Yourself", data=df)
