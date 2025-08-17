@@ -78,7 +78,7 @@ def files_in_directory(directory):
 
 # BUTTON FUNCTIONS
 
-def practise_topic_button(topic, switch_page=False):
+def practise_topic_button(topic, switch_page):
     df = get_data('topic_questions',2,'df')
     question = choice(list(df[df['topic'] == topic['en']]['cy'])) # type: ignore
     ss.chosen_question = (question, topic)
