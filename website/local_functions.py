@@ -351,6 +351,7 @@ def guest_login_form():
                 st.error("User not found, try checking your spelling or registering a new username.", icon="⚠️")
 
 def guest_login(guest_id):
+    st.spinner('Logging in...')
     ss["sub"] = guest_id
     ss["logged_in"] = True
     ss["user_topics"] = load_user_topics()
