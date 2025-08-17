@@ -33,7 +33,7 @@ from deep_translator import GoogleTranslator
 entered_text = st.text_area(label=text_area_label)
 
 data = {
-    'Timestamp': dt.now().strftime('%Y-%m-%d %H:%M%:%S'),
+    'Timestamp': dt.now().strftime('%Y-%m-%d %H:%M:%S'),
     'Entered text': entered_text,
     'Translated output': GoogleTranslator(source=source_lang[1], target=targ_lang[1]).translate(entered_text),
     'Mode': mode # determines direction of translation
