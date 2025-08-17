@@ -13,19 +13,20 @@ from streamlit_gsheets import GSheetsConnection
 db_connection = st.connection("gsheets", type=GSheetsConnection)
 user_db = db_connection.read(worksheet="Users", usecols=[1])
 db_users = user_db[user_db.columns[0]].to_list()
+ss = st.session_state
 
-if "cookie_controller" not in st.session_state:
-    st.session_state["cookie_controller"] = CookieController()
-    cc = st.session_state["cookie_controller"]
+if "cookie_controller" not in ss:
+    ss["cookie_controller"] = CookieController()
+    cc = ss["cookie_controller"]
 else:
-    cc = st.session_state["cookie_controller"]
+    cc = ss["cookie_controller"]
 
 # GENERAL
 
 def deinitialize_profile_page():
     '''Used to set 'initialize' in session state to false on other pages so that the profile page loads correctly.'''
-    if 'initialized' in st.session_state:
-        del st.session_state.initialized
+    if 'initialized' in ss:
+        del ss.initialized
 
 def get_key_from_value(value, dict):
     return [key for key in dict.keys() if dict[key]==value][0]
@@ -47,7 +48,7 @@ def page_setup():
     deinitialize_profile_page()
 
 def is_logged_in():
-    if ('logged_in' in st.session_state) and (st.session_state["logged_in"] == True):
+    if ('logged_in' in ss) and (ss["logged_in"] == True):
         return True
     else:
         return False
@@ -77,10 +78,10 @@ def files_in_directory(directory):
 
 # BUTTON FUNCTIONS
 
-def button_press(result, topic, switch_page=False):
+def practise_topic_button(topic, switch_page=False):
     df = get_data('topic_questions',2,'df')
     question = choice(list(df[df['topic'] == topic['en']]['cy'])) # type: ignore
-    st.session_state.chosen_question = (question, topic)
+    ss.chosen_question = (question, topic)
     if switch_page:
         st.switch_page('website/pages/chatbot.py')
    
@@ -324,8 +325,8 @@ def check_access():
 
 def logout_button(label):
     if st.button(label, icon="🔒"):
-        if "logged_in" in st.session_state: st.session_state["logged_in"] = False
-        if "sub" in st.session_state: del st.session_state.sub
+        if "logged_in" in ss: ss["logged_in"] = False
+        if "sub" in ss: del ss.sub
         redirect_to_welcome_screen()
 
 def guest_login_form():
@@ -351,9 +352,9 @@ def guest_login_form():
                 st.error("User not found, try checking your spelling or registering a new username.", icon="⚠️")
 
 def guest_login(guest_id):
-    st.session_state["sub"] = guest_id
-    st.session_state["logged_in"] = True
-    st.session_state["user_topics"] = load_user_topics()
+    ss["sub"] = guest_id
+    ss["logged_in"] = True
+    ss["user_topics"] = load_user_topics()
     st.rerun()
     st.sidebar('Open')
 
@@ -362,7 +363,7 @@ def guest_login(guest_id):
 def save_user_topics(input_topics):
     topics = ';'.join([str(num) for num in sorted(input_topics)])
     # user_id = [st.user.sub if check_user_attribute() else cc.get('sub')][0]
-    user_id = st.session_state["sub"]
+    user_id = ss["sub"]
     now = dt.datetime.now()
     data = [{'user_id': user_id, 'topics': topics, 'last_updated': now}]
 
@@ -378,7 +379,7 @@ def save_user_topics(input_topics):
 
 def load_user_topics():
     # user_id = [st.user.sub if check_user_attribute() else cc.get('sub')][0]
-    user_id = st.session_state["sub"]
+    user_id = ss["sub"]
     df = db_connection.read(worksheet="Users", ttl=0)
 
     if user_id in db_users:

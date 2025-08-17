@@ -40,7 +40,7 @@ prompt = st.chat_input("Type here...")
 
 def return_right_thing(return_question=False):
     ''' If a user has submitted a prompt, the prompt is input to the AI. If they've chosen a random question to start, either a contextual prompt containing the question is returned or just the question itself, depending on the value of return_question'''
-    
+
     if prompt:
         return prompt
     elif ss.chosen_question:
@@ -92,7 +92,7 @@ if prompt or (ss.chosen_question and len(ss.messages) < 2):
     # Display assistant response in chat message container
     with st.chat_message("assistant"):
         stream = client.chat.completions.create(
-            model=ss['openai_model'],
+            model=ss['openai_model'], #'gpt-4o'
             messages=[{'role': m['role'], 'content': m['content']} for m in ss.messages],
             stream=True
         )
