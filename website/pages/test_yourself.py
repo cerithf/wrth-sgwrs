@@ -69,7 +69,7 @@ My translation:
 
     # Setting a default model
     if 'openai_model' not in st.session_state:
-        st.session_state['openai_model'] = 'gpt-5'
+        st.session_state['openai_model'] = 'gpt-4.1'
 
     if "test_messages" not in st.session_state:
         ss.test_messages = []
