@@ -90,4 +90,4 @@ if ss.chosen_topic:
         st.session_state.test_messages.append({"role": "assistant", "content": response})
 
         if ss.sub == 'guest_cerith':
-            save_ai_response(submitted_text,paragraph['cy'],response)
+            save_ai_response(submitted_text,paragraph['topic'],response)

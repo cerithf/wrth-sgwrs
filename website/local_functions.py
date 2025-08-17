@@ -397,11 +397,11 @@ def load_user_topics():
 
 # TESTING "TEST YOURSELF" FEATURE
 
-def save_ai_response(input, exemplar, response):
+def save_ai_response(input, topic, response):
     df = db_connection.read(worksheet="Test_Yourself", ttl=0)
     data = [{
         'input': input,
-        'exemplar': exemplar,
+        'topic': topic,
         'response': response,
         'timestamp': dt.datetime.now().strftime('%d-%m-%Y %X')
     }]
