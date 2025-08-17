@@ -403,7 +403,7 @@ def save_ai_response(input, exemplar, response):
         'input': input,
         'exemplar': exemplar,
         'response': response,
-        'timestamp': dt.datetime.now()
+        'timestamp': dt.datetime.now().strftime('%d-%m-%Y %X')
     }
     df = pd.concat([df,pd.DataFrame(data)], ignore_index=True)
     db_connection.update(worksheet="Test_Yourself", data=df)
