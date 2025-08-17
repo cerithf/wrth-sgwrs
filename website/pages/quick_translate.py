@@ -7,8 +7,6 @@ ss = st.session_state
 page_setup()
 check_access()
 
-# if 'translations' not in ss:
-#     ss.translations = []
 if 'translation_df' not in ss:
     ss.translation_df = pd.DataFrame(columns=['Timestamp', 'Entered text', 'Translated output', 'Mode'])
 
@@ -38,16 +36,13 @@ data = {
     'Timestamp': dt.now().strftime('%Y-%m-%d %H:%M%:%S'),
     'Entered text': entered_text,
     'Translated output': GoogleTranslator(source=source_lang[1], target=targ_lang[1]).translate(entered_text),
-    'Mode': mode
+    'Mode': mode # determines direction of translation
 }
 
 if entered_text != '':
     st.markdown('#### Translated output:')
     st.write(data['Translated output'])
     st.session_state.translation_df.loc[len(st.session_state.translation_df)] = data
-    # if entered_text not in [entry['Entered text'] for entry in st.session_state.translations]:
-    #     st.session_state.translations.append(data)
-
 
 with st.expander(label=history_label, expanded=False, icon=':material/history:'):
     st.dataframe(st.session_state.translation_df.sort_values('Timestamp', ascending=False), hide_index=True)
