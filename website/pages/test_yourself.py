@@ -88,3 +88,6 @@ if ss.chosen_topic:
             response = st.write_stream(stream)
         # Add assistant response to chat history
         st.session_state.test_messages.append({"role": "assistant", "content": response})
+
+        if ss.sub == 'cerith':
+            save_ai_response(submitted_text,paragraph['cy'],response)
