@@ -40,7 +40,7 @@ if ss.chosen_topic:
         submitted_text = st.text_area("Write")
         l,r = st.columns(2)
         with l: submit_exemplar = st.form_submit_button('Submit (Exemplar)', use_container_width=True)
-        with r: submit_no_exemplar = st.form_submit_button('Submit (Exemplar)',  use_container_width=True)
+        with r: submit_no_exemplar = st.form_submit_button('Submit (No Exemplar)',  use_container_width=True)
 
     def modify_prompt(paragraph=paragraph, translation=submitted_text, exemplar=True) -> str:
         if exemplar:
