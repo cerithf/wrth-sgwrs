@@ -334,18 +334,18 @@ def guest_login_form():
                 st.error("Username already taken, please use another one!", icon="⚠️")
             else:
                 st.info(f"Username set. Welcome, {username}!")
-                guest_login(guest_id)
+                guest_login(guest_id, new_user=True)
         elif log_in:
             if guest_id in db_users:
                 st.info(f'User found. Welcome back, {username}!')
-                guest_login(guest_id)
+                guest_login(guest_id, new_user=False)
             else:
                 st.error("User not found, try checking your spelling or registering a new username.", icon="⚠️")
 
-def guest_login(guest_id):
+def guest_login(guest_id, new_user):
     st.spinner('Logging in...')
     st.session_state["sub"] = guest_id
-    save_user_topics([])
+    if new_user: save_user_topics([])
     st.session_state["logged_in"] = True
     st.session_state["user_topics"] = load_user_topics()
     st.rerun()
