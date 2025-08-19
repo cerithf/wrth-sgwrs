@@ -15,18 +15,12 @@ user_db = db_connection.read(worksheet="Users", usecols=[1])
 db_users = user_db[user_db.columns[0]].to_list()
 ss = st.session_state
 
-if "cookie_controller" not in ss:
-    ss["cookie_controller"] = CookieController()
-    cc = ss["cookie_controller"]
-else:
-    cc = ss["cookie_controller"]
-
 # GENERAL
 
 def deinitialize_profile_page():
     '''Used to set 'initialize' in session state to false on other pages so that the profile page loads correctly.'''
     if 'initialized' in ss:
-        del ss.initialized
+        del st.session_state.initialized
 
 def get_key_from_value(value, dict):
     return [key for key in dict.keys() if dict[key]==value][0]
@@ -48,7 +42,7 @@ def page_setup():
     deinitialize_profile_page()
 
 def is_logged_in():
-    if ('logged_in' in ss) and (ss["logged_in"] == True):
+    if ('logged_in' in ss) and (st.session_state["logged_in"] == True):
         return True
     else:
         return False
@@ -81,7 +75,7 @@ def files_in_directory(directory):
 def practise_topic_button(topic):
     df = get_data('topic_questions',2,'df')
     question = choice(list(df[df['topic'] == topic['en']]['cy'])) # type: ignore
-    ss.chosen_question = (question, topic)
+    st.session_state.chosen_question = (question, topic)
     st.switch_page('website/pages/chatbot.py')
    
 # INTERACTING WITH JSON DATA
@@ -324,8 +318,8 @@ def check_access():
 
 def logout_button(label):
     if st.button(label, icon="🔒"):
-        if "logged_in" in ss: ss["logged_in"] = False
-        if "sub" in ss: del ss.sub
+        if "logged_in" in ss: st.session_state["logged_in"] = False
+        if "sub" in ss: del st.session_state.sub
         redirect_to_welcome_screen()
 
 def guest_login_form():
@@ -352,9 +346,9 @@ def guest_login_form():
 
 def guest_login(guest_id):
     st.spinner('Logging in...')
-    ss["sub"] = guest_id
-    ss["logged_in"] = True
-    ss["user_topics"] = load_user_topics()
+    st.session_state["sub"] = guest_id
+    st.session_state["logged_in"] = True
+    st.session_state["user_topics"] = load_user_topics()
     st.rerun()
     st.sidebar('Open')
 
@@ -362,8 +356,7 @@ def guest_login(guest_id):
 
 def save_user_topics(input_topics):
     topics = ';'.join([str(num) for num in sorted(input_topics)])
-    # user_id = [st.user.sub if check_user_attribute() else cc.get('sub')][0]
-    user_id = ss["sub"]
+    user_id = st.session_state["sub"]
     now = dt.datetime.now()
     data = [{'user_id': user_id, 'topics': topics, 'last_updated': now}]
 
@@ -378,8 +371,7 @@ def save_user_topics(input_topics):
     db_connection.update(worksheet="Users",data=df)
 
 def load_user_topics():
-    # user_id = [st.user.sub if check_user_attribute() else cc.get('sub')][0]
-    user_id = ss["sub"]
+    user_id = st.session_state["sub"]
     df = db_connection.read(worksheet="Users", ttl=0)
 
     if user_id in db_users:
