@@ -1,6 +1,9 @@
 import streamlit as st
 from website.local_functions import *
 
+st.write(user_db)
+st.write(db_users)
+
 st.set_page_config(
     page_title='Wrth Sgwrs',
     page_icon='🏴󠁧󠁢󠁷󠁬󠁳󠁿',
