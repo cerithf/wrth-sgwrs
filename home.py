@@ -1,5 +1,4 @@
 import streamlit as st
-import json
 from website.local_functions import *
 
 st.set_page_config(
