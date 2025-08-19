@@ -7,7 +7,6 @@ import streamlit as st
 import pandas as pd
 from random import choice
 import time
-from streamlit_cookies_controller import CookieController
 from streamlit_gsheets import GSheetsConnection
 
 db_connection = st.connection("gsheets", type=GSheetsConnection)
