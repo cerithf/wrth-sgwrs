@@ -14,6 +14,7 @@ db_connection = st.connection("gsheets", type=GSheetsConnection)
 user_db = db_connection.read(worksheet="Users")
 st.write(user_db)
 db_users = user_db[user_db.columns[0]].to_list()
+st.write(db_users)
 ss = st.session_state
 
 # GENERAL
