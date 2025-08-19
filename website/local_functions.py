@@ -361,7 +361,7 @@ def save_user_topics(input_topics):
 
     df = db_connection.read(worksheet="Users", ttl=0)
     if input_topics == []:
-        df = pd.concat([df, pd.DataFrame(data)], ignore_index=True)
+        df = pd.concat([df, pd.DataFrame(data)])
     else:
         i =df[df['user_id'] == user_id].index.to_list()[0]
         st.write('i is:', i)
