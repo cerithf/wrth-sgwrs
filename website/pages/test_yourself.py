@@ -36,14 +36,9 @@ if ss.chosen_topic:
 
     with st.form("form"):
         submitted_text = st.text_area("Write")
-        a,b,c = st.columns(3)
-        with a: submit_1 = st.form_submit_button('Submit (Exemplar+English)', use_container_width=True)
-        with b: submit_2 = st.form_submit_button('Submit (English)',  use_container_width=True)
-        with c: submit_3 = st.form_submit_button('Submit (Translation Only)',  use_container_width=True)
+        submit = st.form_submit_button('Submit', use_container_width=True)
 
-
-    def modify_prompt(prompt_type, paragraph=paragraph, translation=submitted_text) -> str:
-        if prompt_type=="exemplar_and_english":
+    def modify_prompt(paragraph=paragraph, translation=submitted_text) -> str:
             return f'''
         I am a user who is learning Welsh. The following is a paragraph written in English that I have been asked to translate into Welsh. Please compare the two and tell me where I have made any mistakes or if there are any improvements that can be made. Use the paragraph under the heading "exemplar" to guide your feedback. If I make a mistake regarding mutation, just refer to it as "mutation" rather than "soft mutation", "aspirate mutation", or "nasal mutation", as you often incorrectly label what kind of mutation is present. My translation may only cover part of the original paragraph: this is okay, be encouraging (no need to ask me to do the whole thing). Also remember that I cannot see the exemplar, so do not tell me to refer to it.
 
@@ -56,26 +51,6 @@ if ss.chosen_topic:
         Exemplar:
         {paragraph['cy']}
         '''
-        elif prompt_type=="english_provided":
-            return f'''
-        I am a Welsh learner. I have been asked to translate a paragraph from English into Welsh. I'll share the original English paragraph and then the Welsh translation. Please tell me how I can improve my translation.
-
-        Original English paragraph:
-        {paragraph['en']}
-
-        My translation:
-        {translation}
-        '''
-        elif prompt_type=="translation_only":
-            return f'''
-        I am a Welsh learner. I have been asked to translate a paragraph from English into Welsh. Please give me feedback on my translation.
-
-        My translation:
-        {translation}
-        '''
-        else:
-            return f'There has been an error.'
-        
     # -----
 
     # Setting OpenAI API key from Streamlit secrets
@@ -96,20 +71,9 @@ if ss.chosen_topic:
         except:
             pass
 
-    if (submit_1 or submit_2 or submit_3):
-
-        if submit_1:
-            prompt_type = "exemplar_and_english"
-        elif submit_2:
-            prompt_type = "english_provided"
-        elif submit_3:
-            prompt_type = "translation_only"
-        else:
-            prompt_type = "error"
-    
-
+    if submit:
         # Add user message to chat history
-        st.session_state.test_messages.append({"role": "user", "content": modify_prompt(prompt_type)})
+        st.session_state.test_messages.append({"role": "user", "content": modify_prompt()})
 
         # Display assistant response in chat message container
         with st.chat_message(name="assistant",avatar="👨🏼‍🏫"):
@@ -121,6 +85,3 @@ if ss.chosen_topic:
             response = st.write_stream(stream)
         # Add assistant response to chat history
         st.session_state.test_messages.append({"role": "assistant", "content": response})
-
-        if ss.sub == 'guest_cerith':
-            save_ai_response(submitted_text,paragraph['topic'],response, model=st.session_state['openai_model'], prompt=prompt_type)
