@@ -335,7 +335,6 @@ def guest_login_form():
             else:
                 st.info(f"Username set. Welcome, {username}!")
                 guest_login(guest_id)
-                save_user_topics([])
         elif log_in:
             if guest_id in db_users:
                 st.info(f'User found. Welcome back, {username}!')
@@ -346,6 +345,7 @@ def guest_login_form():
 def guest_login(guest_id):
     st.spinner('Logging in...')
     st.session_state["sub"] = guest_id
+    save_user_topics([])
     st.session_state["logged_in"] = True
     st.session_state["user_topics"] = load_user_topics()
     st.rerun()
