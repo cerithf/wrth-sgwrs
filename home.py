@@ -8,9 +8,6 @@ st.set_page_config(
     initial_sidebar_state="collapsed"
 )
 
-if 'guest_is_logged_in' not in cc.getAll():
-    cc.set('guest_is_logged_in', False)
-
 pages = {
     'About': [st.Page('website/pages/about.py', title='About')],
     'Profile': [st.Page('website/pages/profile.py', title='Profile')],
