@@ -10,8 +10,8 @@ import time
 from streamlit_gsheets import GSheetsConnection
 
 db_connection = st.connection("gsheets", type=GSheetsConnection)
-user_db = db_connection.read(worksheet="Users")
-db_users = user_db[user_db.columns[0]].to_list()
+user_db = db_connection.read(worksheet="Users", ttl=0)
+db_users = user_db['user_id'].to_list()[:]
 ss = st.session_state
 
 # GENERAL
