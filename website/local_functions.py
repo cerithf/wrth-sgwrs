@@ -363,7 +363,7 @@ def save_user_topics(input_topics):
     if input_topics == []:
         df = pd.concat([df, pd.DataFrame(data)], ignore_index=True)
     else:
-        i = int(df[df['user_id'] == user_id].index)
+        i =df[df['user_id'] == user_id].index.to_list()[0]
         st.write('i is:', i)
         df.loc[i, 'topics'] = topics
         df.loc[i, 'last_updated'] = now
