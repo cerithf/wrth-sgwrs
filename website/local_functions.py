@@ -367,7 +367,8 @@ def save_user_topics(input_topics):
         st.write('i is:', i)
         df.loc[i, 'topics'] = topics
         df.loc[i, 'last_updated'] = now
-    
+
+    st.write('SAVING!!')
     db_connection.update(worksheet="Users",data=df)
 
 def load_user_topics():
