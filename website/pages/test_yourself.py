@@ -36,7 +36,7 @@ if ss.chosen_topic:
 
     with st.form("form"):
         submitted_text = st.text_area("Write")
-        submit = st.form_submit_button('Submit', use_container_width=True)
+        submit = st.form_submit_button('Submit')
 
     def modify_prompt(paragraph=paragraph, translation=submitted_text) -> str:
             return f'''
