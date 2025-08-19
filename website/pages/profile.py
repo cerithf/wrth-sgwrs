@@ -78,7 +78,6 @@ if score == total_topics:
 st.divider()
 logout_button('Log out')
 
-st.write(checked_boxes)
 
 if len(checked_boxes) > 0:
     checked_boxes = sorted(checked_boxes)

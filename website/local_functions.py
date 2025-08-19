@@ -364,11 +364,9 @@ def save_user_topics(input_topics):
         df = pd.concat([df, pd.DataFrame(data)])
     else:
         i =df[df['user_id'] == user_id].index.to_list()[0]
-        st.write('i is:', i)
         df.loc[i, 'topics'] = topics
         df.loc[i, 'last_updated'] = now
 
-    st.write('SAVING!!')
     db_connection.update(worksheet="Users",data=df)
 
 def load_user_topics():
