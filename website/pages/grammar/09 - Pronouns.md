@@ -2,22 +2,25 @@
 
 The pronouns in Welsh are:
 
-| English                  | Welsh       |
-| ------------------------ | ----------- |
-| I/me                     | i, fi, mi   |
-| you (singular, informal) | ti, di ^1^  |
-| he (South Wales)         | ef, fe, e   |
-| he (North Wales)         | fo, o       |
-| she                      | hi          |
-| it                       | See below\  |
-| we                       | ni          |
-| you (plural or formal)   | chi\*\*     |
+| English                  | Welsh              |
+| ------------------------ | ------------------ |
+| I/me                     | i, fi, mi          |
+| you (singular, informal) | ti, di<sup>1</sup> |
+| he/him (South Wales)     | ef, fe, e          |
+| he/him (North Wales)     | fo, o              |
+| she/her                  | hi                 |
+| it                       | –<sup>2</sup>      |
+| we/us                    | ni                 |
+| you (plural or formal)   | chi<sup>3</sup>    |
+| they/them                | nhw<sup>4</sup>    |
 
-\* Welsh has no word for it, and instead the equivalent to "he" is used for masculine nouns and the equivalent to "she" is used for feminine ones, see Nouns page for more.
+<sup>1</sup> In North Wales, sometimes "chdi" is used
 
-^1^ this
+<sup>2</sup> Welsh has no word for "it", and instead the equivalent to "he" is used for masculine nouns and the equivalent to "she" is used for feminine ones, see Nouns page for more.
 
-\*\* "chwi" is an archaic form of "chi" and is sometimes seen
+<sup>3</sup> "chwi" is an archaic form of "chi" and is sometimes seen
+
+<sup>4</sup> Sometimes "hwy" is used, but this is very formal and mostly archaic. An extra -t is added to the end of the verb when using "hwy".
 
 ### Singular possessive pronouns (my/your/his/her)
 
