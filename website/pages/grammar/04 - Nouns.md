@@ -1,12 +1,27 @@
 ## 4. Nouns
 
-1. All nouns in Welsh are either masculine or feminine. There is no neuter gender. Unfortunately there is no way of telling which nouns are feminine and which are masculine, so it is important to learn the gender at the same time as the meaning. In a dictionary ‘b’ (benywaidd) will denote feminine nouns and ‘g’ (gwrywaidd) will denote masculine nouns.
-2. Singular, feminine nouns undergo a Soft Mutation after the definite article ‘y’ (the) (except those words which begin with ‘ll’ and ‘rh’). See S.M. rule 1.
-   - e.g. tref - y dref - the town
-   - cadair - y gadair - the chair
-   - merch - y ferch - the girl
-   - llaw - y llaw - the hand
-   - rhaw - y rhaw - the spade
+### Grammatical gender
+
+All nouns in Welsh are either masculine or feminine. Unfortunately, there's no way of telling which nouns are feminine and which are masculine, so it is important to learn the gender at the same time as the meaning. You can find the gender of a noun in dictionaries, often words will mark nouns as etiher `g`/`eg` ((enw) gwrywaidd = masculine (noun)) or `b`/`eb` ((enw) benywaidd = feminine (noun)). There are a handful of nouns, like "cwpan" (cup) which can be treated as masculine or feminine with no difference in meaning, it is simply up to the speaker. Often dictionaries will either pick masculine or feminine for these nouns, or mark them as `g/b`/`eg/b`. You can search a word on the Dictionary page on _Wrth Sgwrs_ to see if a word is masculine or feminine 👈🏼
+
+Since Welsh has no word for "it", we refer to nouns as "he" or "she" depending on the noun's gender:
+
+- Where's my phone (m)? Have you seen it? – Ble mae fy ffôn (g)? Wyt ti wedi gweld e/o?
+- The cat (f) has run out onto the street, you should go and catch it. – Mae'r gath (b) wedi rhedeg mas ar y stryd, dylet ti fynd i'w dal hi.
+
+An exception to this is the weather. Even though "tywydd" is masculine, we always use "hi" to talk about what the weather is:
+
+- It's raining – Mae hi'n bwrw glaw
+- It's cold outside – Mae hi'n oer tu allan
+
+### Mutations
+
+The gender of a noun affects some mutations. You can read more about these on the "Mutations" page.
+
+| Rule                                                                                                                                  | Examples                                                                                                                                                            |
+| ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Singular, feminine nouns undergo a Soft Mutation after the definite article "y/yr/'r" (the), unless the word starts with 'll' or 'rh' | _ tref - y dref - the town <br> _ cadair - y gadair - the chair <br> _ merch - y ferch - the girl <br> _ llaw - y llaw - the hand <br> \* rhaw - y rhaw - the spade |
+
 3. We always use singular nouns after numbers in Welsh. Although the plural of ‘car’ is ‘ceir’ note the use of the singular form after numbers.
    - e.g. one car - un car
    - ten cars - deg car
