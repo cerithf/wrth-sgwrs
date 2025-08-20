@@ -1,5 +1,7 @@
 ## 11. General
 
+Here are some general rules that don't fit into any of the other categories.
+
 ### 1. Words for 'home'
 
 Note the difference between the following:

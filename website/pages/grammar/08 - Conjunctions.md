@@ -1,6 +1,6 @@
 ## 8. Conjunctions
 
-### 1. 'A' ('and')
+### 'A' ('and')
 
 ‘A’ (and) is used in front of a consonant and ‘ac’ in front of a vowel. Remember that ‘w’ and ‘y’ are vowels in Welsh.
 
@@ -29,7 +29,7 @@ For example:
 | y ci a y gath   | y ci a’r gath  | the dog and the cat        |
 | y tŷ a yr ysgol | y tŷ a’r ysgol | the house and the school " |
 
-### 2. ‘Neu’ ('or')
+### ‘Neu’ ('or')
 
 'Neu' ('or') causes a Soft Mutation. See S.M. rule 14.
 
