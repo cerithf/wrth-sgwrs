@@ -18,9 +18,9 @@ An exception to this is the weather. Even though "tywydd" is masculine, we alway
 
 The gender of a noun affects some mutations. You can read more about these on the "Mutations" page.
 
-| Rule                                                                                                                                  | Examples                                                                                                                                                            |
-| ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Singular, feminine nouns undergo a Soft Mutation after the definite article "y/yr/'r" (the), unless the word starts with 'll' or 'rh' | _ tref - y dref - the town <br> _ cadair - y gadair - the chair <br> _ merch - y ferch - the girl <br> _ llaw - y llaw - the hand <br> \* rhaw - y rhaw - the spade |
+| Rule                                                                                                                                  | Examples                                                                                                                                                                 |
+| ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Singular, feminine nouns undergo a Soft Mutation after the definite article "y/yr/'r" (the), unless the word starts with 'll' or 'rh' | \* tref - y dref - the town <br> \n _ cadair - y gadair - the chair <br> _ merch - y ferch - the girl <br> \_ llaw - y llaw - the hand <br> \* rhaw - y rhaw - the spade |
 
 3. We always use singular nouns after numbers in Welsh. Although the plural of ‘car’ is ‘ceir’ note the use of the singular form after numbers.
    - e.g. one car - un car
