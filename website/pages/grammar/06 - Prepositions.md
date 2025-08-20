@@ -1,6 +1,6 @@
 ## 6. Prepositions
 
-Prepositions are difficult when learning a new language because they often work slightly differently from language to language – rarely ius there a 1:1 translation every time. Here is a list of common prepositions in Welsh and their **closest** English equivalents:
+Prepositions are difficult when learning a new language because they often work slightly differently from language to language – rarely is there a 1:1 translation every time. Here is a list of common prepositions in Welsh and their **closest** English equivalents:
 
 | Welsh   | English |
 | ------- | ------- |
@@ -16,6 +16,8 @@ Prepositions are difficult when learning a new language because they often work 
 | dros    | over    |
 | drwy    | through |
 | (o) dan | under   |
+
+### Personal Forms
 
 In Welsh, most prepositions have personal forms. This means they take on endings depending on the pronoun that follows it. These endings match fairly closely with the verb endings found in the present tense, but watch out for exceptions.
 
@@ -35,19 +37,25 @@ In Welsh, prepositions can come at the end of a sentence, but the personal form 
 - Pwy oedd y ferch roedden nhw'n edrych amdani? – Who was the girl they were looking for [her]?
 - Mae 'na lawer o bethau allwn i ddim byw hebddynt – There are many things I couldn't live without [them]
 
-Sometimes multiple forms are correct:
+If you move the preposition away from the end of the sentence, and it isn't in front of a pronoun, then the regular form is used again:
 
-- Beth wyt ti'n siarad amdano? / Am beth wyt ti'n siarad? – What are you talking about [it]?/About what are you talking?
+- Beth wyt ti'n siarad amdano? -> Am beth wyt ti'n siarad?
+- What are you talking about [it]? ->About what are you talking?
+
+### Mewn vs. Yn
 
 A key preposition that doesn't change form is **mewn** which means "in a" (indefinite), as opposed to "yn" which is more definite to talk about something particular (often using "the" in English):
 
 - e.g. Mae ei phethau hi mewn bocs - Her things are in **a** box
 - Mae'r siwtcês yng ngefn y tacsi - The suitcase is in **the** back of the taxi
 - Does dim llawer o bobl yn y pentre - There aren't many people in **the** village
+- Does dim mwy o le yn fy nghar - There's no more space in **my** car (definite)
 
 When talking about places, "yn" is used, along with a nasal mutation:
 
 - Mae fy nheulu'n byw yng Nghymru - My family lives in Wales
+
+### Verbs with Prepositions
 
 It's important to note that some verbs take on certain prepositions, which can differ from English:
 

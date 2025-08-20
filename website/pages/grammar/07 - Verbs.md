@@ -19,9 +19,9 @@ The tenses in each category are:
 
 ### 1. The Present Tense
 
-All verb-nouns are added to various persons of the verb ‘to be’ - linked by ‘yn’. There is no mutation after this linking ‘yn’. After a vowel, 'yn' becomes 'n
+All verb-nouns are added to various persons of the verb ‘to be’ - linked by ‘yn’. There is no mutation after this linking ‘yn’. After a vowel, 'yn' becomes 'n.
 
-#### (a) The Affirmative forms
+#### The Affirmative forms
 
 For clarity, the English translations below use the forms for "to be" (am/are/is), but these can also translate to do/does, too.
 
@@ -51,7 +51,7 @@ In Welsh, the present tense is used for both continuous and general statements: 
 - I'm living in Llandudno
 - I do live Llandudno
 
-#### (b) The Negative forms
+#### The Negative forms
 
 | Welsh                  | English                       |
 | ---------------------- | ----------------------------- |
@@ -73,7 +73,7 @@ In negative sentences the "yn" follows "ddim":
 
 - Dach chi ddim yn gweithio'n galed – You aren't working hard / You don't work hard
 
-#### (c) The Question forms and the ’No / Yes’ replies
+#### The Question forms and the ’No / Yes’ replies
 
 In standard Welsh, yes/no questions are answered by repeating the verb in the affirmative rather than saying "yes" or "no" – an example of this in English would be: "Are you coming today?" – "I am". In informal spoken Welsh, "ie" and "na" can be used to say yes or no respectively.
 
@@ -131,7 +131,7 @@ Some example questions and answers. Remember, the use of 'na is optional:
 
 As in the Present Tense, all verb-nouns are added to various persons of the Imperfect Tense of the verb ‘to be’ - linked again by ‘yn’. There is no mutation after this linking ‘yn’.
 
-#### (a) The Affirmative forms
+#### The Affirmative forms
 
 | Standard froms      | Spoken forms | English           |
 | ------------------- | ------------ | ----------------- |
@@ -154,7 +154,7 @@ Unlike the present tense, which can have multiple translations, the imperfect te
 - Roeddech chi'n gweithio'n galed – You were working hard (NOT: You worked hard)
 - Roedd hi'n siopa yn Llundain – She was shopping in London (NOT: She shopped in London)
 
-#### (b) The Negative forms
+#### The Negative forms
 
 | Standard froms            | Spoken forms      | English           |
 | ------------------------- | ----------------- | ----------------- |
@@ -171,7 +171,7 @@ Unlike the present tense, which can have multiple translations, the imperfect te
 
 \* Again, the singular form "doedd" is used with all nouns, including plurals.
 
-#### (c) The Question forms and the ’No / Yes’ replies
+#### The Question forms and the ’No / Yes’ replies
 
 | Welsh (Question) | English (Question)        | Welsh (Response) | English (Response) |
 | ---------------- | ------------------------- | ---------------- | ------------------ |
@@ -211,7 +211,7 @@ Unlike the present tense where definite and indefinite forms are distinguished b
 
 The perfect tense is formed like the present tense, except the linking word "yn" is replaced with "wedi" (they shouldn't be used together). "Wedi" is often shortened to 'di in spoken language.
 
-#### (a) The Affirmative forms
+#### The Affirmative forms
 
 | Standard froms      | Spoken forms       | Englhash          |
 | ------------------- | ------------------ | ----------------- |
@@ -232,7 +232,7 @@ Examples:
 - Dych chi 'di gweithio’n galed.- You have worked hard.
 - Mae hi wedi siopa yn Llundain. - She has shopped in London.
 
-#### (b) The Negative forms
+#### The Negative forms
 
 These work as above, using the present tense form with "wedi" instead of "yn". Additionally, "ddim wedi" can be replaced with the word "heb" (which means "without"), which causes a soft mutation.
 
@@ -242,7 +242,7 @@ Examples:
 - Dydy hi ddim wedi galw – She hasn't called
 - Dydy'r car ddim yn fawr iawn – The car isn't very big
 
-#### (c) The Question forms and the ’No / Yes’ replies (S.W.)
+#### The Question forms and the ’No / Yes’ replies (S.W.)
 
 The question forms match the present tense, again incorporating "wedi".
 
@@ -303,7 +303,7 @@ So, the English sentence "He will be playing" becomes "Bydd e'n chwarae".
 
 Additionally, in the affirmative form, the particles "mi" (mostly used in North Wales) or "fe" (mostly used in South Wales) can be added at the start of the sentence. They have no real meaning by themselves, but add flow to the sentence, as they trigger a soft mutation (so the 'b' in "bydd" becomes 'f').
 
-#### (a) The Affirmative forms
+#### The Affirmative forms
 
 See the different forms below:
 
@@ -335,7 +335,7 @@ Example sentences:
 - Fe fyddwch chi’n gweithio’n galed. - You’ll be working hard.
 - Bydd hi’n siopa yn Llundain. - She’ll be shopping in London.
 
-#### (b) The Negative forms
+#### The Negative forms
 
 The particles "fe"/"mi" are NOT used in the negative, but the verb undergoes a soft mutation anyway (all conjugated negative verbs do), so the verb starts with an 'f'. The forms are below:
 
@@ -359,7 +359,7 @@ Example sentences:
 - Fyddwch chi ddim yn gweithio’n galed. - You won’t be working hard.
 - Fydda’ i ddim yn byw yn Llandudno. - I won’t be living in Llandudno.
 
-#### (c) The Question forms and the ’No / Yes’ replies
+#### The Question forms and the ’No / Yes’ replies
 
 | Welsh (Question)   | English (Question)                | Welsh (Response)     | English (Response)       |
 | ------------------ | --------------------------------- | -------------------- | ------------------------ |
@@ -392,7 +392,7 @@ Example sentences:
 
 ### 6. The Past Tense (see also No. 9 below)
 
-#### (a) The Affirmative forms
+#### The Affirmative forms
 
 These are the endings that are added to the root or stem of all regular verbs.
 
@@ -461,7 +461,7 @@ Example sentences:
 - Fe welodd hi’r ffilm neithiwr. - She saw the film last night.
 - Prynais i ffrog newydd ddoe. - I bought a new dress yesterday.
 
-#### (b) The Negative forms
+#### The Negative forms
 
 As before, the particle 'Mi/Fe' isn't used for negative statements, but the mutation remains (as all conjugated negative verbs have a mutation). Verbs starting with "P", "T" or "C" undergo the aspirate mutation (becoming "Ph", "Th" and "Ch" respectively), and all others undergo the soft mutation.
 
@@ -509,7 +509,7 @@ Remember that the affirmative 'mi'/'fe' always triggers a soft mutation, whereas
 - Fe gysgais i -> Chysgais i ddim
 - Mi brynodd e -> Phrynodd e ddim
 
-#### (c) The Question forms
+#### The Question forms
 
 Merely drop the positive marker ‘Mi / Fe’ , keep the Soft Mutation and adopt a questioning tone of voice.
 
@@ -546,7 +546,7 @@ The 5 main irregular verbs in Welsh are:
 - cael - to have/receive
 - bod - to be
 
-#### (a) The Affirmative forms
+#### The Affirmative forms
 
 The first three form a group of their own as they follow a similar pattern.
 
@@ -619,7 +619,7 @@ The ‘bues’ forms can also be used with another verb. The exact meaning in En
 - Fuoch chi'n siopa? – Have you been shopping?
 - Fe fues i’n chwarae tennis ar ôl cinio ddydd Sadwrn. - I was/went playing tennis after lunch on Saturday.
 
-#### (b) The Negative forms
+#### The Negative forms
 
 The Negatives are formed in exactly the same way as regular verbs. Drop the positive marker ‘Mi / Fe’, keep the Soft Mutation (except for ‘cael’ which undertakes an Aspirate Mutation, as it starts with P, T or C) and add ‘ddim’.
 
@@ -646,7 +646,7 @@ The Questions are formed in exactly the same way as regular verbs. Drop the posi
 
 Instead of adding endings to the root of each verb, it’s possible to use **any** verb-noun with the Future Tense forms of ‘gwneud’ - remembering that the verb-noun will undergo a Soft Mutation.
 
-#### (a) The Affirmative forms
+#### The Affirmative forms
 
 Here are some examples of sentences that use this form, along with the added verb-noun used. Remember, the forms of gwneud can be seen above in "Past Tense – Irregular Verbs".
 
@@ -687,7 +687,7 @@ Notice that the mutation after the verb now happens on the word ‘dim’ which 
 
 Sometimes this is referred to as the "short" future tense, as opposed to the future continuous, which is a long-form tense.
 
-#### (a) The Affirmative forms
+#### The Affirmative forms
 
 These are the endings that are added to the root or stem of all regular verbs.
 
@@ -722,7 +722,7 @@ Example sentences:
 - Fe weliff hi’r ffilm heno. - She‘ll see the film tonight.
 - Fe / Mi bryna’ i ffrog newydd yfory. - I’ll buy a new dress tomorrow.
 
-#### (b) The Negative forms
+#### The Negative forms
 
 Drop the positive or affirmative marker ‘Mi / Fe’ but keep the Soft Mutation at the beginning of the verb forms - except those verbs which begin with c, p or t (which undergo an Aspirate Mutation).
 
@@ -804,7 +804,7 @@ The 5 main irregular verbs in Welsh are:
 - dod - to come
 - bod - to be
 
-#### (a) The Affirmative forms
+#### The Affirmative forms
 
 The first three form a group of their own as they follow a similar pattern.
 
@@ -849,7 +849,7 @@ Example sentences:
 - Fe ddown ni i’r parti mewn tacsi. - We’ll come to the party in a taxi
 - Fe ddoi di i’r gwaith gyda Bill. - You’ll come to work with Bill.
 
-#### (b) The Negative forms
+#### The Negative forms
 
 The Negatives are formed in exactly the same way as regular verbs. Drop the positive marker ‘Mi / Fe’, keep the Soft Mutation (except for ‘cael’ which undertakes an Aspirate Mutation) and add ‘ddim’.
 
@@ -880,7 +880,7 @@ Note that the future tense of ‘cael’ is also used to ask for permission (‘
 
 Instead of adding endings to the root of each verb (as seen in No. 10 above), it’s possible to use any verb noun with the Future Tense forms of ‘gwneud’ - remembering that the verb- noun will undergo a Soft Mutation. See S.M. rule 19.
 
-#### (a) The Affirmative forms
+#### The Affirmative forms
 
 - Fe / Mi wna’ i ddysgu’r gwaith. - I’ll learn the work.
 - Fe / Mi wnei di brynu car newydd eleni. - You’ll buy a new car this year.
@@ -889,7 +889,7 @@ Instead of adding endings to the root of each verb (as seen in No. 10 above), it
 - Fe / Mi wnewch chi dalu’r bil. - You’ll pay the bill.
 - Fe / Mi wnân nhw gofio’r gwaith. - They’ll remember the work.
 
-#### (b) The Negative forms
+#### The Negative forms
 
 Notice that the mutation after the verb now happens on the word ‘dim’ which becomes ‘ddim’ - so the word which follows it doesn’t need to be mutated in these negative sentences.
 
@@ -913,7 +913,7 @@ Notice that the mutation after the verb now happens on the word ‘dim’ which 
 
 As mentioned above, the participles ‘Mi / Fe’ are used in front of these forms in normal speech. to
 
-#### (a) The Affirmative forms
+#### The Affirmative forms
 
 | Welsh               | English            |
 | ------------------- | ------------------ |
@@ -930,7 +930,7 @@ As mentioned above, the participles ‘Mi / Fe’ are used in front of these for
 
 These forms are again followed by the linking ‘yn’ which causes no mutation.
 
-#### (b) The Negative forms
+#### The Negative forms
 
 | Welsh              | English               |
 | ------------------ | --------------------- |
@@ -1007,7 +1007,7 @@ Example sentences:
 
 ### 14. The short ‘would like’ pattern
 
-#### (a) The Affirmative forms
+#### The Affirmative forms
 
 | Long form                    | Short form           | English                 |
 | ---------------------------- | -------------------- | ----------------------- |
@@ -1023,7 +1023,7 @@ Example sentences:
 
 There is no linking ‘yn’after these forms, as they are short-form, and the verb-nouns which follow these short Affirmative forms undergo a Soft Mutation. See S.M. No.25.
 
-#### (b) The Negative forms
+#### The Negative forms
 
 | Welsh                 | English                    |
 | --------------------- | -------------------------- |
@@ -1040,7 +1040,7 @@ There is no linking ‘yn’after these forms, as they are short-form, and the v
 
 There is no linking ‘yn’after these forms, as they are short-form, and the verb-nouns which follow these short Affirmative forms do not undergo a Soft Mutation because the "ddim" beforehand is mutated instead. See S.M. No.25.
 
-#### (c) The Question and answer forms
+#### The Question and answer forms
 
 | Welsh (Question) | English (Question)       | Welsh (Response) |
 | ---------------- | ------------------------ | ---------------- |
@@ -1065,7 +1065,7 @@ Example sentences:
 
 ### 15. The ‘ought to / should’ verb forms
 
-#### (a) The Affirmative forms
+#### The Affirmative forms
 
 | Welsh                | English                      |
 | -------------------- | ---------------------------- |
@@ -1081,7 +1081,7 @@ Example sentences:
 
 Notice that there is no linking ‘yn’ after this pattern and the verb-noun which follows the Affirmative forms undergoes a Soft Mutation. See S.M. No.26.
 
-#### (b) The Negative forms
+#### The Negative forms
 
 | Welsh                 | English                |
 | --------------------- | ---------------------- |
@@ -1128,7 +1128,7 @@ Example sentences:
 
 ### 16. The ‘must / have to’ pattern
 
-#### (a) The Affirmative forms
+#### The Affirmative forms
 
 | Welsh                      | English                   |
 | -------------------------- | ------------------------- |
@@ -1145,21 +1145,21 @@ Example sentences:
 
 ‘Mae’ is often omitted in ordinary speech.
 
-#### (b) The Negative forms
+#### The Negative forms
 
 To make a negative statement, change ‘Mae’ to ‘Does dim’.
 
 - Does dim rhaid i ni - We don’t have to
 - Does dim rhaid iddi (hi) - She doesn’t have to
 
-#### (c) The Question forms
+#### The Question forms
 
 To ask a question, change ‘Mae’ to ‘Oes?’
 
 - Oes rhaid i chi? - Must you / Do you have to?
 - Oes rhaid iddyn nhw? - Must they / Do they have to?
 
-#### (d) Past Tesne
+#### Past Tesne
 
 In the Past Tense use ‘Roedd’, ‘Oedd?’ and ‘Doedd dim’.
 
@@ -1172,14 +1172,14 @@ In the Past Tense use ‘Roedd’, ‘Oedd?’ and ‘Doedd dim’.
 | Doedd dim rhaid i chi      | You didn’t have to |
 | Doedd dim rhaid i ni       | We didn’t have to  |
 
-#### (e) Soft Mutation
+#### Soft Mutation
 
 The verb noun which follows the full ‘rhaid’ (must) pattern undergoes a Soft Mutation. See S.M. rule 16. We often omit ‘Mae’ in ordinary speech.
 
 - (Mae) rhaid iddyn nhw **dd**ysgu Cymraeg. - They must learn Welsh.
 - Oes rhaid i ti **f**ynd adre’? - Must you / Do you have to go home?
 
-#### (f) Initial verb form
+#### Initial verb form
 
 You’ll notice that the initial verb form which is used with ‘rhaid’ is always in the 3rd person singular. This is true of all tenses.
 
@@ -1189,7 +1189,7 @@ You’ll notice that the initial verb form which is used with ‘rhaid’ is alw
 - Tasai rhaid i ………………
 - Fe / Mi fasai rhaid i ………………
 
-#### (g) Shortened form
+#### Shortened form
 
 The full pattern doesn’t have to be used. It’s possible to make an impersonal statement by placing a verb noun immediately after ‘rhaid’ - thus avoiding the mutation!
 
@@ -1221,7 +1221,7 @@ Remember that these prepositions have personal forms - they conjugate, See Secti
 
 ### 18. The Command forms
 
-#### (a) Regular verbs
+#### Regular verbs
 
 Most verbs fall into this group.
 
@@ -1272,7 +1272,7 @@ The noun which directly follows a command ( the direct object)undergoes a Soft M
 | Siarada Gymraeg!  | Speak Welsh!        |
 | Cofia fi ati hi!  | Remember me to her! |
 
-#### (b) Exceptions
+#### Exceptions
 
 There is sometimes a change of spelling in the command form.
 
@@ -1291,7 +1291,7 @@ Examples:
 - Gwrandewch arna i! - Listen to me!
 - Gadewch iddi (hi) fynd! - Let her go!
 
-#### (c) Irregular verbs
+#### Irregular verbs
 
 These are all different and have to be learnt individually. Here are the three most often used.
 
@@ -1310,7 +1310,7 @@ Examples:
 - Dewch i mewn! - Come in!
 - Tyrd / Dere yma! - Come here!
 
-#### (d) Negative commands
+#### Negative commands
 
 The negative commands (Don’t) are:
 

@@ -1,6 +1,25 @@
 ## 9. Pronouns
 
-### 1. Singular possessive pronouns (my/your/his/her)
+The pronouns in Welsh are:
+
+| English                  | Welsh       |
+| ------------------------ | ----------- |
+| I/me                     | i, fi, mi   |
+| you (singular, informal) | ti, di ^1^  |
+| he (South Wales)         | ef, fe, e   |
+| he (North Wales)         | fo, o       |
+| she                      | hi          |
+| it                       | See below\  |
+| we                       | ni          |
+| you (plural or formal)   | chi\*\*     |
+
+\* Welsh has no word for it, and instead the equivalent to "he" is used for masculine nouns and the equivalent to "she" is used for feminine ones, see Nouns page for more.
+
+^1^ this
+
+\*\* "chwi" is an archaic form of "chi" and is sometimes seen
+
+### Singular possessive pronouns (my/your/his/her)
 
 The singular possessive pronouns cause mutations.
 
@@ -10,7 +29,7 @@ However, if the ‘possessor’ needs to be emphasized, it is this confirming pr
 
 - Dyma fy llyfr **i** a dyna dy lyfr **di** ar y bwrdd. - Here’s **my** book and there’s **your** book on the table.
 
-#### (a) Nasal mutation after 'fy' (my)
+#### Nasal mutation after 'fy' (my)
 
 ‘Fy’ (my) is followed by an Nasal Mutation. See N.M. rule 2. The confirming pronoun for ‘fy’ is ‘i’.
 
@@ -28,7 +47,7 @@ remain unchanged.
 - ysgol - fy ysgol (i) - my school
 - llaw - fy llaw (i) - my hand
 
-#### (b) Soft mutation after ‘dy’ (your) and ‘ei’(his)
+#### Soft mutation after ‘dy’ (your) and ‘ei’(his)
 
 ‘Dy’ (your) and ‘ei’(his) cause a Soft Mutation. See S.M. rule 11.
 The confirming pronoun for ‘dy’ is ‘di’. The confirming pronoun for ‘ei’(his) is ‘e ’in South Wales and ‘o’ in North Wales.
@@ -49,7 +68,7 @@ Other letters remain unchanged.
 - chwaer - dy chwaer (di) - your sister
 - nith - ei nith (e/o) - his niece
 
-#### (c) Aspirate mutation and invasive 'H' after 'ei' (her)
+#### Aspirate mutation and invasive 'H' after 'ei' (her)
 
 ‘Ei’ (her) causes an Aspirate Mutation. See A.M. rule 4. The confirming pronoun for ‘ei’ is ‘hi’. This means the mutation can be the only way to tell the difference between 'his' and 'her' in Welsh.
 
@@ -69,7 +88,7 @@ If the word after 'ei' starts with a vowel, the "invasive H" is added before the
 - ysgol – ei hysgol (hi) – her school
 - wy – ei hwy (hi) – her egg
 
-### 2. Plural pronouns (our/your/their)
+### Plural pronouns (our/your/their)
 
 The plural possessive pronouns ‘ein’ (our),’ eich’ (your) and ‘eu’ (their) do not cause mutations, but like ‘ei’ (her), **both ‘ein’ (our) and ‘eu’ (their) cause an invasive H** before a vowel.
 
@@ -79,7 +98,7 @@ The confirming pronoun for ‘ein’ (our) is ‘ni’, the confirming pronoun f
 - enw - eich enw (chi) - your name
 - iaith - eu hiaith (nhw) - their language
 
-### 3. Personal pronouns after long verbs
+### Personal pronouns after long verbs
 
 When a personal pronoun ( me / you / him / her / it / us / them) is used immediately after a ‘long’ verb (i.e. it is the object of that verb) then in Welsh we must also use the possessive pronouns ( see No. 1 above) in front of the verb-noun.
 

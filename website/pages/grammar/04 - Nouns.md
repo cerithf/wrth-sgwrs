@@ -52,3 +52,80 @@ You can read more about these on the "Mutations" page.
 - e.g. Roedd Mair yn ddoctor. - Mair was a doctor.
 - Mae e’n filiwnydd. - He’s a millionaire.
 - Dydy o ddim yn brifathro.- He isn’t a headmaster.
+
+3. Adjectives and descriptive nouns following singular feminine nouns get a soft mutation
+
+- clyfar (clever) -> menyw glyfar (clever woman)
+- pren (wood(en)) -> cadair bren (wooden chair)
+- prysur (busy) -> dinas brysur (busy city)
+
+There is no mutation after masculine nouns or feminine nouns in the plural:
+
+| Masculine Noun            | Feminine Plural Noun           |
+| ------------------------- | ------------------------------ |
+| dyn clyfar (clever man)   | menywod clyfar (clever women)  |
+| bwrdd pren (wooden table) | cadeiriau pren (wooden chair)  |
+| lle prysur (busy place)   | dinasoedd prysur (busy cities) |
+
+### Plurals
+
+Unlike in English, where most plurals are formed by adding an 's' to the end of the word, Welsh has a variety of plural endings. The most common one is '-au', however, so if you're unsure, that is your best bet. Officially, '-au' is pronounced as it's written (said like the English word "eye"), but it's often pronounced like "-a" in North Wales and "-e" in South Wales.
+
+In addition to endings, plurals can also be formed by changing a vowel sound (similar to the English foot -> feet). A singular ending also exists, -yn (masculine) or -en (feminine), meaning sometimes a plural is formed by removing this ending.
+
+| Ending                      | Example                  | English                    |
+| --------------------------- | ------------------------ | -------------------------- |
+| -au                         | afal -> afalau           | apple -> apples            |
+| -(i)aid                     | cwsmer -> cwsmeriaid     | customer -> customers      |
+| -ion                        | dyn -> dynion            | man -> men                 |
+| -od                         | gwylan -> gwylanod       | seagull -> seagulls        |
+| -oedd                       | coedwig -> coedwigoedd   | forest -> forests          |
+| -on                         | geiriadur -> geiriaduron | dictionary -> dictionaries |
+| -wyr                        | cefnogwr -> cefnogwyr    | supporter -> supporters    |
+| vowel change                | car -> ceir              | car -> cars                |
+| vowel change + -au          | bwrdd -> byrddau         | table -> tables            |
+| vowel change + -aid         | dafad -> defaid          | sheep -> sheep (pl.)       |
+| vowel change + -on          | glas -> gleision         | blue -> blues              |
+| removing -en                | coeden -> coed           | tree -> trees              |
+| removing -yn                | pysgodyn -> pysgod       | fish -> fish (pl.)         |
+| vowel change + removing -yn | plentyn -> plant         | child -> children          |
+
+While it isn't always possible to predict the plural form, certain noun endings always take a particular plural ending:
+
+- -wr -> -wyr
+- -ydd -> -yddion
+- -ty -> -tai
+
+Remember that in Welsh, a word's stress is almost always on the penultimate syllable, meaning that by adding or removing a syllable, the stress gets shifted. (Note that these words are written without accents, they are just used to show stress.)
+
+- áfal -> afálau
+- cóedwig -> coedwígoedd
+- pysgódyn -> pýsgod
+- geiriádur -> geiriadúron
+- gwýlan -> gwylánod
+
+At times this stress shift affects how a letter is pronounced: "ceffyl" (KEFF-il) -> "ceffylau" (keff-ULL-eye); (horse -> horses)
+
+Sometimes this stress shift adds an 'h' before the new syllable. (Note that these words are written without accents, they are just used to show stress.)
+
+- brénin (king) -> brenhínau (kings); brenhínes (queen) -> brenhinésau (queens)
+
+And some plurals are exceptions:
+
+- llaw -> dwylo (hand -> hands): "dwylo" comes from "dwy law" (two hands)
+- buwch -> buchod (cow -> cows), but often the word "gwartheg" (cattle) is used for multiple cows
+
+### Compound Nouns
+
+Nouns can be joined with other words to create compound nouns, as in English:
+
+- tân (fire) + gwyllt (wild) = tân gwyllt (firworks)
+- croes (cross) + man (place) = croesfan (junction)
+- ffon (stick) + cerdded (to walk) = ffon gerdded (walking stick)
+
+Note that feminine nouns cause a soft mutation in the second word, as does combining the words into a single word.
+
+In English, a compound noun is almost always formed from the singular forms of both nouns, whereas in Welsh often the plural is used in situations where multiple of an object are present in reality:
+
+- bookshop = siop lyfrau (literally: books shop)
+- toothbrush = brwsh dannedd (literally: teeth brush)
