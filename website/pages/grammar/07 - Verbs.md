@@ -38,6 +38,8 @@ For clarity, the English translations below use the forms for "to be" (am/are/is
 | Mae'r car yn      | "               | The car is       |
 | Mae'r plant yn    | "               | The children are |
 
+(See the Pronouns page for more on pronouns)
+
 Notes:
 
 - Ditto marks (") indicate when the spoken form matches the standard form
@@ -57,7 +59,6 @@ In Welsh, the present tense is used for both continuous and general statements: 
 | ---------------------- | ----------------------------- |
 | Dydw i ddim            | I’m not / don’t               |
 | Dwyt ti ddim           | You’re (familiar) not / don’t |
-| Dydych chi ddim        | You’re (polite) not / don’t   |
 | Dydy Tom / Bethan ddim | Tom / Bethan isn’t / doesn’t  |
 | Dydy’r car ddim        | The car isn’t / doesn’t       |
 | Dydy e/o ddim          | He / It (m) isn’t / doesn’t   |
