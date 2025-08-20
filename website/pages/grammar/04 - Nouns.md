@@ -14,37 +14,41 @@ An exception to this is the weather. Even though "tywydd" is masculine, we alway
 - It's raining – Mae hi'n bwrw glaw
 - It's cold outside – Mae hi'n oer tu allan
 
+### Numbers
+
+The numbers 2, 3 or 4 have masculine and feminine forms depending on the gender of the noun you use them with. (See the Numbers page for more information.)
+
+| Number | English         | Welsh (m)       | English          | Welsh (f)      |
+| ------ | --------------- | --------------- | ---------------- | -------------- |
+| 2      | two boys        | dau fachgen     | two girls        | dwy ferch      |
+| 3      | three toys      | tri thegan      | three pounds (£) | tair punt      |
+| 4      | four kilometres | pedwar cilometr | four miles       | pedair milltir |
+
+After a number, the noun is **always** written in the singular.
+
+| English                 | Welsh                                   |
+| ----------------------- | --------------------------------------- |
+| boy -> boys             | bachgen -> bechgyn (or hogyn -> hogiau) |
+| girl -> girls           | merch -> merched (or hogan -> gennod)   |
+| toy -> toys             | tegan -> tegannau                       |
+| pound -> pounds         | punt -> punnoedd                        |
+| kilometre -> kilometres | cilometr -> cilometrau                  |
+| mile -> miles           | milltir -> milltiroedd                  |
+
 ### Mutations
 
-The gender of a noun affects some mutations. You can read more about these on the "Mutations" page.
+You can read more about these on the "Mutations" page.
 
-| Rule                                                                                                                                  | Examples                                                                                                                                                                 |
-| ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Singular, feminine nouns undergo a Soft Mutation after the definite article "y/yr/'r" (the), unless the word starts with 'll' or 'rh' | \* tref - y dref - the town <br> \n _ cadair - y gadair - the chair <br> _ merch - y ferch - the girl <br> \_ llaw - y llaw - the hand <br> \* rhaw - y rhaw - the spade |
+1. Singular, feminine nouns undergo a Soft Mutation after the definite article "y/yr/'r" (the) or "u" (one), unless the word starts with 'll' or 'rh'
 
-3. We always use singular nouns after numbers in Welsh. Although the plural of ‘car’ is ‘ceir’ note the use of the singular form after numbers.
-   - e.g. one car - un car
-   - ten cars - deg car
-   - eight cars - wyth car
-   - two cars - dau gar
-4. Feminine nouns undergo a Soft Mutation after the numbers ‘un’ (one) (except those words which begin with ‘ll’ and ‘rh’) and ‘dwy’ (two). See S.M. rules 2 and 3. Notice that the form ‘dwy’ is used with feminine nouns only.
-   - e.g. un ferch - one girl / dwy ferch - two girls
-   - un llaw - one hand / dwy law - two hands
-   - un bont - one bridge / dwy bont - two bridge
-5. Masculine nouns undergo a Soft Mutation after the number ‘dau’ (two). See S.M. rule 4. Notice that the form ‘dau’ is used with masculine nouns only.
-   - e.g. dau fachgen - two boys
-   - dau gi - two dogs
-   - dau ddyn - two men
-   - dau blentyn - two children
-6. Masculine nouns after ‘tri’ (three) and all singular nouns after ‘chwe’ (six) undergo an Aspirate Mutation. See A.M. rules 1 and 2. The form ‘tri’ is used
-   with masculine nouns only.
-   _ e.g. tri cheffyl - three horses
-   _ tri phlentyn - three children
-   _ tri thractor - three tractors
-   _ chwe cheiniog - six pennies (pence)
-   _ chwe phunt - six pounds
-   _ chwe thegan - six toys
-7. Nouns will undergo a Soft Mutation after the linking ‘yn’.
-   See S.M. rule 12.
-   _ e.g. Roedd Mair yn ddoctor. - Mair was a doctor.
-   _ Mae e’n filiwnydd. (S.W.) - He’s a millionaire. \* Dydy o ddim yn brifathro.- He isn’t a headmaster. (N.W.)
+- tref - y dref - the town
+- cadair - y gadair - the chair
+- merch - un ferch - one girl
+- llaw - y llaw - the hand
+- rhaw - un rhaw - one spade
+
+2. Nouns will undergo a Soft Mutation after the linking ‘yn’.
+
+- e.g. Roedd Mair yn ddoctor. - Mair was a doctor.
+- Mae e’n filiwnydd. - He’s a millionaire.
+- Dydy o ddim yn brifathro.- He isn’t a headmaster.
