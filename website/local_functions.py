@@ -372,7 +372,6 @@ def save_user_topics(input_topics):
 def load_user_topics():
     user_id = st.session_state["sub"]
     df = db_connection.read(worksheet="Users", ttl=0)
-    st.write(df)
 
     if user_id in db_users:
         try:
