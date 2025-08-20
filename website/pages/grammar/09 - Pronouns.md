@@ -2,25 +2,27 @@
 
 The pronouns in Welsh are:
 
-| English                  | Welsh              |
-| ------------------------ | ------------------ |
-| I/me                     | i, fi, mi          |
-| you (singular, informal) | ti, di<sup>1</sup> |
-| he/him (South Wales)     | ef, fe, e          |
-| he/him (North Wales)     | fo, o              |
-| she/her                  | hi                 |
-| it                       | –<sup>2</sup>      |
-| we/us                    | ni                 |
-| you (plural or formal)   | chi<sup>3</sup>    |
-| they/them                | nhw<sup>4</sup>    |
+| English                  | Welsh      |
+| ------------------------ | ---------- |
+| I/me                     | i, fi, mi  |
+| you (singular, informal) | ti, di (1) |
+| he/him (South Wales)     | ef, fe, e  |
+| he/him (North Wales)     | fo, o      |
+| she/her                  | hi         |
+| it                       | – (2)      |
+| we/us                    | ni         |
+| you (plural or formal)   | chi(3)     |
+| they/them                | nhw(4)     |
 
-<sup>1</sup> In North Wales, sometimes "chdi" is used
+(1) In North Wales, sometimes "chdi" is used
 
-<sup>2</sup> Welsh has no word for "it", and instead the equivalent to "he" is used for masculine nouns and the equivalent to "she" is used for feminine ones, see Nouns page for more.
+(2) Welsh has no word for "it", and instead the equivalent to "he" is used for masculine nouns and the equivalent to "she" is used for feminine ones, see Nouns page for more.
 
-<sup>3</sup> "chwi" is an archaic form of "chi" and is sometimes seen
+(3) "chwi" is an archaic form of "chi" and is sometimes seen
 
-<sup>4</sup> Sometimes "hwy" is used, but this is very formal and mostly archaic. An extra -t is added to the end of the verb when using "hwy".
+(4) Sometimes "hwy" is used, but this is very formal and mostly archaic. An extra -t is added to the end of the verb when using "hwy".
+
+Welsh, unlike English, maintains a T-V distinction. This means there is both a formal and informal way of saying "you". The informal word is (generally) "ti" and should be used informally when talking to one person. "Chi" is used when speaking to multiple people, or in formal situations regardless of how many people are being spoken to.
 
 ### Singular possessive pronouns (my/your/his/her)
 
